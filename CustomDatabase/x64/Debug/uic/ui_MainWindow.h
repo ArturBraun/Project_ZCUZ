@@ -10,9 +10,9 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
@@ -22,9 +22,12 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindowClass
 {
 public:
-    QMenuBar *menuBar;
-    QToolBar *mainToolBar;
+    QAction *addTableQAction;
+    QAction *deleteTableQAction;
+    QAction *editRowsQAction;
+    QAction *showTablesQAction;
     QWidget *centralWidget;
+    QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindowClass)
@@ -32,18 +35,42 @@ public:
         if (MainWindowClass->objectName().isEmpty())
             MainWindowClass->setObjectName(QString::fromUtf8("MainWindowClass"));
         MainWindowClass->resize(600, 400);
-        menuBar = new QMenuBar(MainWindowClass);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        MainWindowClass->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(MainWindowClass);
-        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
-        MainWindowClass->addToolBar(mainToolBar);
+        addTableQAction = new QAction(MainWindowClass);
+        addTableQAction->setObjectName(QString::fromUtf8("addTableQAction"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/MainWindow/icons/AddTableIcon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        addTableQAction->setIcon(icon);
+        deleteTableQAction = new QAction(MainWindowClass);
+        deleteTableQAction->setObjectName(QString::fromUtf8("deleteTableQAction"));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/MainWindow/icons/DeleteTableIcon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        deleteTableQAction->setIcon(icon1);
+        editRowsQAction = new QAction(MainWindowClass);
+        editRowsQAction->setObjectName(QString::fromUtf8("editRowsQAction"));
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/MainWindow/icons/RowsIcon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        editRowsQAction->setIcon(icon2);
+        showTablesQAction = new QAction(MainWindowClass);
+        showTablesQAction->setObjectName(QString::fromUtf8("showTablesQAction"));
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8(":/MainWindow/icons/TableIcon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        showTablesQAction->setIcon(icon3);
         centralWidget = new QWidget(MainWindowClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         MainWindowClass->setCentralWidget(centralWidget);
+        mainToolBar = new QToolBar(MainWindowClass);
+        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
+        mainToolBar->setIconSize(QSize(35, 35));
+        mainToolBar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+        MainWindowClass->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(MainWindowClass);
         statusBar->setObjectName(QString::fromUtf8("statusBar"));
         MainWindowClass->setStatusBar(statusBar);
+
+        mainToolBar->addAction(addTableQAction);
+        mainToolBar->addAction(deleteTableQAction);
+        mainToolBar->addAction(editRowsQAction);
+        mainToolBar->addAction(showTablesQAction);
 
         retranslateUi(MainWindowClass);
 
@@ -53,6 +80,22 @@ public:
     void retranslateUi(QMainWindow *MainWindowClass)
     {
         MainWindowClass->setWindowTitle(QCoreApplication::translate("MainWindowClass", "MainWindow", nullptr));
+        addTableQAction->setText(QCoreApplication::translate("MainWindowClass", "Dodaj tabel\304\231", nullptr));
+#if QT_CONFIG(tooltip)
+        addTableQAction->setToolTip(QCoreApplication::translate("MainWindowClass", "Dodaj tabel\304\231", nullptr));
+#endif // QT_CONFIG(tooltip)
+        deleteTableQAction->setText(QCoreApplication::translate("MainWindowClass", "Usu\305\204 tabel\304\231", nullptr));
+#if QT_CONFIG(tooltip)
+        deleteTableQAction->setToolTip(QCoreApplication::translate("MainWindowClass", "Usu\305\204 tabel\304\231", nullptr));
+#endif // QT_CONFIG(tooltip)
+        editRowsQAction->setText(QCoreApplication::translate("MainWindowClass", "Edytuj wiersze", nullptr));
+#if QT_CONFIG(tooltip)
+        editRowsQAction->setToolTip(QCoreApplication::translate("MainWindowClass", "Edytuj wiersze", nullptr));
+#endif // QT_CONFIG(tooltip)
+        showTablesQAction->setText(QCoreApplication::translate("MainWindowClass", "Przegl\304\205daj tabele", nullptr));
+#if QT_CONFIG(tooltip)
+        showTablesQAction->setToolTip(QCoreApplication::translate("MainWindowClass", "Przegl\304\205daj tabele", nullptr));
+#endif // QT_CONFIG(tooltip)
     } // retranslateUi
 
 };

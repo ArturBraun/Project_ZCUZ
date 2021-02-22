@@ -1,9 +1,11 @@
-#pragma once
+#ifndef MAINWINDOW
+#define MAINWINDOW
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
+#include "AbstractView.h"
 
-class MainWindow : public QMainWindow
+class MainWindow : public QMainWindow, public AbstractView
 {
     Q_OBJECT
 
@@ -13,3 +15,5 @@ public:
 private:
     Ui::MainWindowClass ui;
 };
+
+#endif

@@ -1,10 +1,8 @@
-<UI version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>MainWindowClass</class>
- <widget class="QMainWindow" name="MainWindowClass" >
-  <property name="objectName" >
-   <string notr="true">MainWindowClass</string>
-  </property>
-  <property name="geometry" >
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
@@ -12,17 +10,84 @@
     <height>400</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>MainWindow</string>
-  </property>  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="iconSize">
+    <size>
+     <width>35</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="addTableQAction"/>
+   <addaction name="deleteTableQAction"/>
+   <addaction name="editRowsQAction"/>
+   <addaction name="showTablesQAction"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="addTableQAction">
+   <property name="icon">
+    <iconset resource="MainWindow.qrc">
+     <normaloff>:/MainWindow/icons/AddTableIcon.png</normaloff>:/MainWindow/icons/AddTableIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Dodaj tabelę</string>
+   </property>
+   <property name="toolTip">
+    <string>Dodaj tabelę</string>
+   </property>
+  </action>
+  <action name="deleteTableQAction">
+   <property name="icon">
+    <iconset resource="MainWindow.qrc">
+     <normaloff>:/MainWindow/icons/DeleteTableIcon.png</normaloff>:/MainWindow/icons/DeleteTableIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Usuń tabelę</string>
+   </property>
+   <property name="toolTip">
+    <string>Usuń tabelę</string>
+   </property>
+  </action>
+  <action name="editRowsQAction">
+   <property name="icon">
+    <iconset resource="MainWindow.qrc">
+     <normaloff>:/MainWindow/icons/RowsIcon.png</normaloff>:/MainWindow/icons/RowsIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edytuj wiersze</string>
+   </property>
+   <property name="toolTip">
+    <string>Edytuj wiersze</string>
+   </property>
+  </action>
+  <action name="showTablesQAction">
+   <property name="icon">
+    <iconset resource="MainWindow.qrc">
+     <normaloff>:/MainWindow/icons/TableIcon.png</normaloff>:/MainWindow/icons/TableIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Przeglądaj tabele</string>
+   </property>
+   <property name="toolTip">
+    <string>Przeglądaj tabele</string>
+   </property>
+  </action>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources>
-   <include location="MainWindow.qrc"/>
+  <include location="MainWindow.qrc"/>
  </resources>
  <connections/>
-</UI>
+</ui>

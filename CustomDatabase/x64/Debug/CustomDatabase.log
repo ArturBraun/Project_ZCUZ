@@ -1,9 +1,11 @@
 ﻿  uic MainWindow.ui
   rcc MainWindow.qrc
   moc MainWindow.h
-   RCC: Warning: No resources in 'D:\studia_OKNO\zaawansowaneC++\Project\CustomDatabase\MainWindow.qrc'.
+  Model.cpp
+  AbstractView.cpp
+  Controller.cpp
   MainWindow.cpp
   main.cpp
-  qrc_MainWindow.cpp
   moc_MainWindow.cpp
+  qrc_MainWindow.cpp
   CustomDatabase.vcxproj -> D:\studia_OKNO\zaawansowaneC++\Project\x64\Debug\CustomDatabase.exe
