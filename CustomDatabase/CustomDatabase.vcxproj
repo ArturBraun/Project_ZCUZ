@@ -86,19 +86,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ChooseTableWidget.cpp" />
     <ClCompile Include="Model.cpp" />
+    <ClCompile Include="StartingWidget.cpp" />
     <QtRcc Include="MainWindow.qrc" />
+    <QtUic Include="ChooseTableWidget.ui" />
     <QtUic Include="MainWindow.ui" />
     <QtMoc Include="MainWindow.h" />
     <ClCompile Include="AbstractView.cpp" />
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="main.cpp" />
+    <QtUic Include="StartingWidget.ui" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractView.h" />
+    <QtMoc Include="ChooseTableWidget.h" />
     <ClInclude Include="Controller.h" />
     <ClInclude Include="Model.h" />
+    <QtMoc Include="StartingWidget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

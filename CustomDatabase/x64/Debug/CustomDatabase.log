@@ -1,11 +1,2 @@
-﻿  uic MainWindow.ui
-  rcc MainWindow.qrc
-  moc MainWindow.h
-  Model.cpp
-  AbstractView.cpp
-  Controller.cpp
-  MainWindow.cpp
-  main.cpp
-  moc_MainWindow.cpp
-  qrc_MainWindow.cpp
+﻿  MainWindow.cpp
   CustomDatabase.vcxproj -> D:\studia_OKNO\zaawansowaneC++\Project\x64\Debug\CustomDatabase.exe

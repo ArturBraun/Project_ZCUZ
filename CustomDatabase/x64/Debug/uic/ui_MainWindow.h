@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
@@ -27,6 +28,8 @@ public:
     QAction *editRowsQAction;
     QAction *showTablesQAction;
     QWidget *centralWidget;
+    QGridLayout *gridLayout_2;
+    QGridLayout *centralQGridLayout;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -57,6 +60,16 @@ public:
         showTablesQAction->setIcon(icon3);
         centralWidget = new QWidget(MainWindowClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        gridLayout_2 = new QGridLayout(centralWidget);
+        gridLayout_2->setSpacing(6);
+        gridLayout_2->setContentsMargins(11, 11, 11, 11);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        centralQGridLayout = new QGridLayout();
+        centralQGridLayout->setSpacing(6);
+        centralQGridLayout->setObjectName(QString::fromUtf8("centralQGridLayout"));
+
+        gridLayout_2->addLayout(centralQGridLayout, 0, 0, 1, 1);
+
         MainWindowClass->setCentralWidget(centralWidget);
         mainToolBar = new QToolBar(MainWindowClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
