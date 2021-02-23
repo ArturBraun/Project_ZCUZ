@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Własna baza danych</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="MainWindow.qrc">
+    <normaloff>:/MainWindow/icons/TableIcon.png</normaloff>:/MainWindow/icons/TableIcon.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout_2">
@@ -39,7 +43,7 @@
    <addaction name="addTableQAction"/>
    <addaction name="deleteTableQAction"/>
    <addaction name="editRowsQAction"/>
-   <addaction name="showTablesQAction"/>
+   <addaction name="showTableQAction"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="addTableQAction">
@@ -78,7 +82,7 @@
     <string>Edytuj wiersze</string>
    </property>
   </action>
-  <action name="showTablesQAction">
+  <action name="showTableQAction">
    <property name="icon">
     <iconset resource="MainWindow.qrc">
      <normaloff>:/MainWindow/icons/TableIcon.png</normaloff>:/MainWindow/icons/TableIcon.png</iconset>

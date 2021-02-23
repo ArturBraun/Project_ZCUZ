@@ -1,2 +1,8 @@
-﻿  MainWindow.cpp
+﻿  uic MainWindow.ui
+  moc MainWindow.h
+  ChooseTableWidget.cpp
+  MainWindow.cpp
+  main.cpp
+  moc_ChooseTableWidget.cpp
+  moc_MainWindow.cpp
   CustomDatabase.vcxproj -> D:\studia_OKNO\zaawansowaneC++\Project\x64\Debug\CustomDatabase.exe

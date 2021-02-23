@@ -16,6 +16,13 @@ public:
 
 public slots:
     void deleteTableClicked();
+    void editRowsClicked();
+    void showTableClicked();
+
+    void restoreDefaultView();   
+
+protected:
+    void setCentralChildWidget(std::string buttonText);
 
 private:
     Ui::MainWindowClass ui;
