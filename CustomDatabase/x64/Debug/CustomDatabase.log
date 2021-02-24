@@ -1,6 +1,2 @@
-﻿  Table.cpp
-  qrc_MainWindow.cpp
-  moc_MainWindow.cpp
-  moc_ChooseTableWidget.cpp
-  moc_StartingWidget.cpp
+﻿  AddTableWidget.cpp
   CustomDatabase.vcxproj -> D:\studia_OKNO\zaawansowaneC++\Project\x64\Debug\CustomDatabase.exe

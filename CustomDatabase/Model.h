@@ -14,6 +14,7 @@ public:
 
 	std::vector<std::string> getTablesNames();
 	void createNewTable(std::string &tableName, ColumnsData& columnTypesAndNames);
+	void deleteTable(int tableId);
 
 private:
 	std::vector<std::unique_ptr<Table>> tables;

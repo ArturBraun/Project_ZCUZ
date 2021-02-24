@@ -6,6 +6,7 @@
 #include "AbstractView.h"
 #include "StartingWidget.h"
 #include "ChooseTableWidget.h"
+#include "AddTableWidget.h"
 
 class MainWindow : public QMainWindow, public AbstractView
 {
@@ -18,6 +19,7 @@ public slots:
     void deleteTableClicked();
     void editRowsClicked();
     void showTableClicked();
+    void addTableClicked();
 
     void restoreDefaultView();   
 

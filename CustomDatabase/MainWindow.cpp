@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     QObject::connect(ui.deleteTableQAction, &QAction::triggered, this, &MainWindow::deleteTableClicked);
     QObject::connect(ui.editRowsQAction, &QAction::triggered, this, &MainWindow::editRowsClicked);
     QObject::connect(ui.showTableQAction, &QAction::triggered, this, &MainWindow::showTableClicked);
+    QObject::connect(ui.addTableQAction, &QAction::triggered, this, &MainWindow::addTableClicked);
 }
 
 void MainWindow::deleteTableClicked() 
@@ -47,4 +48,16 @@ void MainWindow::setCentralChildWidget(std::string buttonText)
     ui.centralQGridLayout->addWidget(this->centralChild);
 
     QObject::connect(chooseTableWidget, &ChooseTableWidget::childWidgetCanceled, this, &MainWindow::restoreDefaultView);
+}
+
+void MainWindow::addTableClicked()
+{
+    ui.centralQGridLayout->removeWidget(this->centralChild);
+    delete this->centralChild;
+
+    AddTableWidget* addTableWidget = new AddTableWidget(this);
+    this->centralChild = addTableWidget;
+    ui.centralQGridLayout->addWidget(this->centralChild);
+
+    QObject::connect(addTableWidget, &AddTableWidget::childWidgetCanceled, this, &MainWindow::restoreDefaultView);
 }

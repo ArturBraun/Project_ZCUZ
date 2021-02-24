@@ -21,4 +21,8 @@ std::vector<std::string> Model::getTablesNames()
 	return tablesNames;
 }
 
+void Model::deleteTable(int tableId)
+{
+	this->tables.erase(this->tables.begin() + tableId);
+}
 
