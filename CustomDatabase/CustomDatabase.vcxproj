@@ -46,6 +46,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>msvc2019_64</QtInstall>
     <QtModules>core;gui;widgets</QtModules>
@@ -88,7 +93,9 @@
   <ItemGroup>
     <ClCompile Include="ChooseTableWidget.cpp" />
     <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Row.cpp" />
     <ClCompile Include="StartingWidget.cpp" />
+    <ClCompile Include="Table.cpp" />
     <QtRcc Include="MainWindow.qrc" />
     <QtUic Include="ChooseTableWidget.ui" />
     <QtUic Include="MainWindow.ui" />
@@ -101,7 +108,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractView.h" />
+    <ClInclude Include="Row.h" />
+    <ClInclude Include="Table.h" />
     <QtMoc Include="ChooseTableWidget.h" />
+    <ClInclude Include="CommonDictionary.h" />
     <ClInclude Include="Controller.h" />
     <ClInclude Include="Model.h" />
     <QtMoc Include="StartingWidget.h" />
