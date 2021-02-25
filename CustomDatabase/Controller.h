@@ -4,14 +4,22 @@
 #include "Model.h"
 #include "AbstractView.h"
 #include <iostream>
+#include <vector>
 
 class Controller
 {
 public:
-	Controller(std::shared_ptr<AbstractView> abstractViewPtr, std::shared_ptr<Model> modelPtr);
+	Controller();
+
+	void setModel(std::shared_ptr<Model> modelPtr);
+	void setView(std::shared_ptr<AbstractView> viewPtr);
+
+	std::vector<std::string> getTablesNames();
+	void createNewTable(std::string& tableName, ColumnsData& columnTypesAndNames);
+	void deleteTable(int tableId);
 
 private:
-	std::shared_ptr<AbstractView> abstractViewPtr;
+	std::shared_ptr<AbstractView> viewPtr;
 	std::shared_ptr<Model> modelPtr;
 };
 

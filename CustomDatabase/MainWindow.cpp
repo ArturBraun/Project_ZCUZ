@@ -14,19 +14,24 @@ MainWindow::MainWindow(QWidget *parent)
     QObject::connect(ui.addTableQAction, &QAction::triggered, this, &MainWindow::addTableClicked);
 }
 
+void MainWindow::setController(std::shared_ptr<Controller> controllerPtr)
+{
+    this->controllerPtr = controllerPtr;
+}
+
 void MainWindow::deleteTableClicked() 
 {
-    this->setCentralChildWidget("Usun tabele");
+    this->setCentralChildWidget(DELETE_TABLE_BUTTON_TEXT, DELETE_TABLE_VIEW);
 }
 
 void MainWindow::editRowsClicked()
 {
-    this->setCentralChildWidget("Edytuj tabele");
+    this->setCentralChildWidget(EDIT_TABLE_BUTTON_TEXT, EDIT_TABLE_VIEW);
 }
 
 void MainWindow::showTableClicked()
 {
-    this->setCentralChildWidget("Pokaz tabele");
+    this->setCentralChildWidget(SHOW_TABLE_BUTTON_TEXT, SHOW_TABLE_VIEW);
 }
 
 void MainWindow::restoreDefaultView() 
@@ -38,16 +43,16 @@ void MainWindow::restoreDefaultView()
     ui.centralQGridLayout->addWidget(this->centralChild);
 }
 
-void MainWindow::setCentralChildWidget(std::string buttonText)
+void MainWindow::setCentralChildWidget(std::string& buttonText, std::string& viewType)
 {
     ui.centralQGridLayout->removeWidget(this->centralChild);
     delete this->centralChild;
 
-    ChooseTableWidget* chooseTableWidget = new ChooseTableWidget(buttonText, this);
+    ChooseTableWidget* chooseTableWidget = new ChooseTableWidget(buttonText, viewType, this->controllerPtr, this);
     this->centralChild = chooseTableWidget;
     ui.centralQGridLayout->addWidget(this->centralChild);
 
-    QObject::connect(chooseTableWidget, &ChooseTableWidget::childWidgetCanceled, this, &MainWindow::restoreDefaultView);
+    QObject::connect(chooseTableWidget, &ChooseTableWidget::restoreDefaultWidget, this, &MainWindow::restoreDefaultView);
 }
 
 void MainWindow::addTableClicked()
@@ -59,5 +64,13 @@ void MainWindow::addTableClicked()
     this->centralChild = addTableWidget;
     ui.centralQGridLayout->addWidget(this->centralChild);
 
-    QObject::connect(addTableWidget, &AddTableWidget::childWidgetCanceled, this, &MainWindow::restoreDefaultView);
+    QObject::connect(addTableWidget, &AddTableWidget::restoreDefaultWidget, this, &MainWindow::restoreDefaultView);
+    QObject::connect(addTableWidget, &AddTableWidget::createNewTable, this, &MainWindow::createNewTableClicked);
 }
+
+void MainWindow::createNewTableClicked(std::string& tableName, ColumnsData& columnsData)
+{
+    this->controllerPtr->createNewTable(tableName, columnsData);
+    this->restoreDefaultView();
+}
+
