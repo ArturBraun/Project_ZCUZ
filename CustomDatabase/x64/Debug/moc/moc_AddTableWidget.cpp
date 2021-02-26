@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_AddTableWidget_t {
-    QByteArrayData data[10];
-    char stringdata0[186];
+    QByteArrayData data[12];
+    char stringdata0[235];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -41,14 +41,17 @@ QT_MOC_LITERAL(5, 65, 9), // "tableName"
 QT_MOC_LITERAL(6, 75, 60), // "std::unordered_map<int,std::p..."
 QT_MOC_LITERAL(7, 136, 11), // "columnsData"
 QT_MOC_LITERAL(8, 148, 19), // "cancelButtonClicked"
-QT_MOC_LITERAL(9, 168, 17) // "saveButtonClicked"
+QT_MOC_LITERAL(9, 168, 17), // "saveButtonClicked"
+QT_MOC_LITERAL(10, 186, 22), // "addColumnButtonClicked"
+QT_MOC_LITERAL(11, 209, 25) // "deleteColumnButtonClicked"
 
     },
     "AddTableWidget\0restoreDefaultWidget\0"
     "\0createNewTable\0std::string&\0tableName\0"
     "std::unordered_map<int,std::pair<std::string,std::string> >&\0"
     "columnsData\0cancelButtonClicked\0"
-    "saveButtonClicked"
+    "saveButtonClicked\0addColumnButtonClicked\0"
+    "deleteColumnButtonClicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -58,7 +61,7 @@ static const uint qt_meta_data_AddTableWidget[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -66,18 +69,22 @@ static const uint qt_meta_data_AddTableWidget[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   34,    2, 0x06 /* Public */,
-       3,    2,   35,    2, 0x06 /* Public */,
+       1,    0,   44,    2, 0x06 /* Public */,
+       3,    2,   45,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       8,    0,   40,    2, 0x0a /* Public */,
-       9,    0,   41,    2, 0x0a /* Public */,
+       8,    0,   50,    2, 0x0a /* Public */,
+       9,    0,   51,    2, 0x0a /* Public */,
+      10,    0,   52,    2, 0x0a /* Public */,
+      11,    0,   53,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 4, 0x80000000 | 6,    5,    7,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -94,6 +101,8 @@ void AddTableWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 1: _t->createNewTable((*reinterpret_cast< std::string(*)>(_a[1])),(*reinterpret_cast< std::unordered_map<int,std::pair<std::string,std::string> >(*)>(_a[2]))); break;
         case 2: _t->cancelButtonClicked(); break;
         case 3: _t->saveButtonClicked(); break;
+        case 4: _t->addColumnButtonClicked(); break;
+        case 5: _t->deleteColumnButtonClicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -144,13 +153,13 @@ int AddTableWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 6)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 4;
+        _id -= 6;
     }
     return _id;
 }

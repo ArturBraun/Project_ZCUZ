@@ -17,6 +17,11 @@ public:
 public slots:
 	void cancelButtonClicked();
 	void saveButtonClicked();
+	void addColumnButtonClicked();
+	void deleteColumnButtonClicked();
+
+protected:
+	void createNewTableItem(int x, int y, std::string& text);
 
 signals:
 	void restoreDefaultWidget();
