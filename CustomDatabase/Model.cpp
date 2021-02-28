@@ -7,7 +7,7 @@ Model::Model()
 
 void Model::createNewTable(std::string& tableName, ColumnsData& columnTypesAndNames)
 {
-	this->tables.push_back(std::make_unique<Table>(tableName, columnTypesAndNames));
+	this->tables.push_back(std::make_shared<Table>(tableName, columnTypesAndNames));
 }
 
 std::vector<std::string> Model::getTablesNames()
@@ -24,5 +24,10 @@ std::vector<std::string> Model::getTablesNames()
 void Model::deleteTable(int tableId)
 {
 	this->tables.erase(this->tables.begin() + tableId);
+}
+
+std::shared_ptr<Table> Model::getTablePtr(int tableId)
+{
+	return this->tables[tableId];
 }
 

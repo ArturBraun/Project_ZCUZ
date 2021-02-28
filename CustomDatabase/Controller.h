@@ -17,6 +17,7 @@ public:
 	std::vector<std::string> getTablesNames();
 	void createNewTable(std::string& tableName, ColumnsData& columnTypesAndNames);
 	void deleteTable(int tableId);
+	std::shared_ptr<Table> getTablePtr(int tableId);
 
 private:
 	std::shared_ptr<AbstractView> viewPtr;

@@ -46,6 +46,11 @@ void AddTableWidget::saveButtonClicked()
 	if (!ui.tableNameQLineEdit->text().isEmpty())
 	{
 		ColumnsData columnsData;
+		for (int i = 0; i < ui.tableQTableWidget->rowCount(); ++i)
+		{
+			std::pair<std::string, std::string> columnData = std::make_pair(ui.tableQTableWidget->item(i,0)->text().toStdString(), ui.tableQTableWidget->item(i, 1)->text().toStdString());
+			columnsData[i] = columnData;
+		}
 
 		emit createNewTable(ui.tableNameQLineEdit->text().toStdString(), columnsData);
 	}

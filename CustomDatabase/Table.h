@@ -14,6 +14,7 @@ public:
 
 	std::string getTableName();
 	std::string getColumnName(int columnId);
+	int getNumberOfColumns();
 	std::string getColumnType(int columnId);
 	std::vector<Row> getSortedRows(int sortColumnId = 0);
 	

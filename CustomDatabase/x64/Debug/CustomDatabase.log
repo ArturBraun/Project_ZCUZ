@@ -1,2 +1,3 @@
-﻿  AddTableWidget.cpp
+﻿  EditTableWidget.cpp
+  ShowTableView.cpp
   CustomDatabase.vcxproj -> D:\studia_OKNO\zaawansowaneC++\Project\x64\Debug\CustomDatabase.exe

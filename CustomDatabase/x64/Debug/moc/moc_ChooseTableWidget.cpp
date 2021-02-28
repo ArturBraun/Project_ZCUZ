@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ChooseTableWidget_t {
-    QByteArrayData data[5];
-    char stringdata0[76];
+    QByteArrayData data[9];
+    char stringdata0[117];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,12 +35,18 @@ static const qt_meta_stringdata_ChooseTableWidget_t qt_meta_stringdata_ChooseTab
 QT_MOC_LITERAL(0, 0, 17), // "ChooseTableWidget"
 QT_MOC_LITERAL(1, 18, 20), // "restoreDefaultWidget"
 QT_MOC_LITERAL(2, 39, 0), // ""
-QT_MOC_LITERAL(3, 40, 19), // "cancelButtonClicked"
-QT_MOC_LITERAL(4, 60, 15) // "okButtonClicked"
+QT_MOC_LITERAL(3, 40, 11), // "tableChosen"
+QT_MOC_LITERAL(4, 52, 7), // "tableId"
+QT_MOC_LITERAL(5, 60, 11), // "std::string"
+QT_MOC_LITERAL(6, 72, 8), // "viewType"
+QT_MOC_LITERAL(7, 81, 19), // "cancelButtonClicked"
+QT_MOC_LITERAL(8, 101, 15) // "okButtonClicked"
 
     },
     "ChooseTableWidget\0restoreDefaultWidget\0"
-    "\0cancelButtonClicked\0okButtonClicked"
+    "\0tableChosen\0tableId\0std::string\0"
+    "viewType\0cancelButtonClicked\0"
+    "okButtonClicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -50,22 +56,24 @@ static const uint qt_meta_data_ChooseTableWidget[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   29,    2, 0x06 /* Public */,
+       1,    0,   34,    2, 0x06 /* Public */,
+       3,    2,   35,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       3,    0,   30,    2, 0x0a /* Public */,
-       4,    0,   31,    2, 0x0a /* Public */,
+       7,    0,   40,    2, 0x0a /* Public */,
+       8,    0,   41,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Int, 0x80000000 | 5,    4,    6,
 
  // slots: parameters
     QMetaType::Void,
@@ -81,8 +89,9 @@ void ChooseTableWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->restoreDefaultWidget(); break;
-        case 1: _t->cancelButtonClicked(); break;
-        case 2: _t->okButtonClicked(); break;
+        case 1: _t->tableChosen((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< std::string(*)>(_a[2]))); break;
+        case 2: _t->cancelButtonClicked(); break;
+        case 3: _t->okButtonClicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -94,8 +103,14 @@ void ChooseTableWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
                 return;
             }
         }
+        {
+            using _t = void (ChooseTableWidget::*)(int , std::string );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&ChooseTableWidget::tableChosen)) {
+                *result = 1;
+                return;
+            }
+        }
     }
-    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject ChooseTableWidget::staticMetaObject = { {
@@ -127,13 +142,13 @@ int ChooseTableWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }
@@ -142,6 +157,13 @@ int ChooseTableWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void ChooseTableWidget::restoreDefaultWidget()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void ChooseTableWidget::tableChosen(int _t1, std::string _t2)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

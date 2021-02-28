@@ -3,12 +3,14 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
+#include <memory>
+#include "Controller.h"
 #include "AbstractView.h"
 #include "StartingWidget.h"
 #include "ChooseTableWidget.h"
 #include "AddTableWidget.h"
-#include <memory>
-#include "Controller.h"
+#include "EditTableWidget.h"
+#include "ShowTableView.h"
 
 class MainWindow : public QMainWindow, public AbstractView
 {
@@ -27,6 +29,7 @@ public slots:
     void createNewTableClicked(std::string& tableName, ColumnsData& columnsData);
 
     void restoreDefaultView();   
+    void tableChosen(int tableId, std::string viewType);
 
 protected:
     void setCentralChildWidget(std::string& buttonText, std::string& viewType);

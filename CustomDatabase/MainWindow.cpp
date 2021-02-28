@@ -53,6 +53,7 @@ void MainWindow::setCentralChildWidget(std::string& buttonText, std::string& vie
     ui.centralQGridLayout->addWidget(this->centralChild);
 
     QObject::connect(chooseTableWidget, &ChooseTableWidget::restoreDefaultWidget, this, &MainWindow::restoreDefaultView);
+    QObject::connect(chooseTableWidget, &ChooseTableWidget::tableChosen, this, &MainWindow::tableChosen);
 }
 
 void MainWindow::addTableClicked()
@@ -72,5 +73,30 @@ void MainWindow::createNewTableClicked(std::string& tableName, ColumnsData& colu
 {
     this->controllerPtr->createNewTable(tableName, columnsData);
     this->restoreDefaultView();
+}
+
+void MainWindow::tableChosen(int tableId, std::string viewType)
+{
+    if (viewType == DELETE_TABLE_VIEW)
+    {
+        this->controllerPtr->deleteTable(tableId);
+        this->restoreDefaultView();
+    }
+    else if (viewType == EDIT_TABLE_VIEW)
+    {
+        ui.centralQGridLayout->removeWidget(this->centralChild);
+        delete this->centralChild;
+
+        this->centralChild = new EditTableWidget(tableId, this->controllerPtr, this);
+        ui.centralQGridLayout->addWidget(this->centralChild);
+    }
+    else if (viewType == SHOW_TABLE_VIEW)
+    {
+        ui.centralQGridLayout->removeWidget(this->centralChild);
+        delete this->centralChild;
+
+        this->centralChild = new ShowTableView(tableId, this->controllerPtr, this);
+        ui.centralQGridLayout->addWidget(this->centralChild);
+    }
 }
 

@@ -93,25 +93,31 @@
   <ItemGroup>
     <ClCompile Include="AddTableWidget.cpp" />
     <ClCompile Include="ChooseTableWidget.cpp" />
+    <ClCompile Include="EditTableWidget.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="Row.cpp" />
+    <ClCompile Include="ShowTableView.cpp" />
     <ClCompile Include="StartingWidget.cpp" />
     <ClCompile Include="Table.cpp" />
     <QtRcc Include="MainWindow.qrc" />
     <QtUic Include="AddTableWidget.ui" />
     <QtUic Include="ChooseTableWidget.ui" />
+    <QtUic Include="EditTableWidget.ui" />
     <QtUic Include="MainWindow.ui" />
     <QtMoc Include="MainWindow.h" />
     <ClCompile Include="AbstractView.cpp" />
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="main.cpp" />
+    <QtUic Include="ShowTableView.ui" />
     <QtUic Include="StartingWidget.ui" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractView.h" />
     <QtMoc Include="AddTableWidget.h" />
+    <QtMoc Include="EditTableWidget.h" />
     <ClInclude Include="Row.h" />
+    <QtMoc Include="ShowTableView.h" />
     <ClInclude Include="Table.h" />
     <QtMoc Include="ChooseTableWidget.h" />
     <ClInclude Include="CommonDictionary.h" />

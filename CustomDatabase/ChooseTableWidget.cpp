@@ -27,14 +27,7 @@ void ChooseTableWidget::okButtonClicked()
 	int currentIndex = ui.chooseTableQComboBox->currentIndex();
 	if (currentIndex > -1)
 	{
-		if (this->viewType == DELETE_TABLE_VIEW)
-		{
-			this->controllerPtr->deleteTable(currentIndex);
-			ui.chooseTableQComboBox->removeItem(currentIndex);
-
-			emit restoreDefaultWidget();
-		}
-
+		emit tableChosen(ui.chooseTableQComboBox->currentIndex(), this->viewType);
 	}
 }
 

@@ -18,6 +18,10 @@ std::string Table::getColumnType(int columnId)
 {
 	return this->columnsData[columnId].second;
 }
+int Table::getNumberOfColumns()
+{
+	return this->columnsData.size();
+}
 std::vector<Row> Table::getSortedRows(int sortColumnId)
 {
 	std::vector<Row> sortedRows = this->rows;
@@ -26,4 +30,5 @@ std::vector<Row> Table::getSortedRows(int sortColumnId)
 
 	return sortedRows;
 }
+
 

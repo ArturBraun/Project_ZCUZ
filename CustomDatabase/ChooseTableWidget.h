@@ -21,6 +21,7 @@ public slots:
 
 signals:
 	void restoreDefaultWidget();
+	void tableChosen(int tableId, std::string viewType);
 
 private:
 	Ui::ChooseTableWidget ui;

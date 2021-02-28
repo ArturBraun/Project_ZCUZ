@@ -24,4 +24,8 @@ void Controller::deleteTable(int tableId)
 {
 	this->modelPtr->deleteTable(tableId);
 }
+std::shared_ptr<Table> Controller::getTablePtr(int tableId)
+{
+	return this->modelPtr->getTablePtr(tableId);
+}
 
