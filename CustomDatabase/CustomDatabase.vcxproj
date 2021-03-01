@@ -93,13 +93,25 @@
   <ItemGroup>
     <ClCompile Include="AddTableWidget.cpp" />
     <ClCompile Include="ChooseTableWidget.cpp" />
+    <ClCompile Include="Controller\Controller.cpp" />
     <ClCompile Include="EditTableWidget.cpp" />
     <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Model\Model.cpp" />
+    <ClCompile Include="Model\Row.cpp" />
+    <ClCompile Include="Model\Table.cpp" />
     <ClCompile Include="Row.cpp" />
     <ClCompile Include="ShowTableView.cpp" />
     <ClCompile Include="StartingWidget.cpp" />
     <ClCompile Include="Table.cpp" />
+    <ClCompile Include="View\AbstractView.cpp" />
+    <ClCompile Include="View\AddTableWidget.cpp" />
+    <ClCompile Include="View\ChooseTableWidget.cpp" />
+    <ClCompile Include="View\EditTableWidget.cpp" />
+    <ClCompile Include="View\MainWindow.cpp" />
+    <ClCompile Include="View\ShowTableView.cpp" />
+    <ClCompile Include="View\StartingWidget.cpp" />
     <QtRcc Include="MainWindow.qrc" />
+    <CustomBuild Include="View\MainWindow.qrc" />
     <QtUic Include="AddTableWidget.ui" />
     <QtUic Include="ChooseTableWidget.ui" />
     <QtUic Include="EditTableWidget.ui" />
@@ -111,9 +123,26 @@
     <ClCompile Include="main.cpp" />
     <QtUic Include="ShowTableView.ui" />
     <QtUic Include="StartingWidget.ui" />
+    <CustomBuild Include="View\AddTableWidget.ui" />
+    <CustomBuild Include="View\ChooseTableWidget.ui" />
+    <CustomBuild Include="View\EditTableWidget.ui" />
+    <CustomBuild Include="View\MainWindow.ui" />
+    <CustomBuild Include="View\ShowTableView.ui" />
+    <CustomBuild Include="View\StartingWidget.ui" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractView.h" />
+    <ClInclude Include="Controller\Controller.h" />
+    <ClInclude Include="Model\Model.h" />
+    <ClInclude Include="Model\Row.h" />
+    <ClInclude Include="Model\Table.h" />
+    <ClInclude Include="View\AbstractView.h" />
+    <ClInclude Include="View\AddTableWidget.h" />
+    <ClInclude Include="View\ChooseTableWidget.h" />
+    <ClInclude Include="View\EditTableWidget.h" />
+    <ClInclude Include="View\MainWindow.h" />
+    <ClInclude Include="View\ShowTableView.h" />
+    <ClInclude Include="View\StartingWidget.h" />
     <QtMoc Include="AddTableWidget.h" />
     <QtMoc Include="EditTableWidget.h" />
     <ClInclude Include="Row.h" />
