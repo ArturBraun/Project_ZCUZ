@@ -4,7 +4,7 @@
 
 #include <QWidget>
 #include "ui_EditTableWidget.h"
-#include "Controller.h"
+#include "../Controller/Controller.h"
 #include <vector>
 #include <string>
 

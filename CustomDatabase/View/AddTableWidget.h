@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include "ui_AddTableWidget.h"
-#include "CommonDictionary.h"
+#include "../CommonDictionary.h"
 #include <qmessagebox.h>
 
 class AddTableWidget : public QWidget

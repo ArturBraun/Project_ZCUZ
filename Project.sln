@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CustomDatabase", "CustomDatabase\CustomDatabase.vcxproj", "{E9B69091-92FE-4BAC-9EF9-699AEA7EE11C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CustomDatabase", "CustomDatabase\CustomDatabase.vcxproj", "{4E351DBD-3731-48BC-9EE9-8BBA5721F958}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E9B69091-92FE-4BAC-9EF9-699AEA7EE11C}.Debug|x64.ActiveCfg = Debug|x64
-		{E9B69091-92FE-4BAC-9EF9-699AEA7EE11C}.Debug|x64.Build.0 = Debug|x64
-		{E9B69091-92FE-4BAC-9EF9-699AEA7EE11C}.Release|x64.ActiveCfg = Release|x64
-		{E9B69091-92FE-4BAC-9EF9-699AEA7EE11C}.Release|x64.Build.0 = Release|x64
+		{4E351DBD-3731-48BC-9EE9-8BBA5721F958}.Debug|x64.ActiveCfg = Debug|x64
+		{4E351DBD-3731-48BC-9EE9-8BBA5721F958}.Debug|x64.Build.0 = Debug|x64
+		{4E351DBD-3731-48BC-9EE9-8BBA5721F958}.Release|x64.ActiveCfg = Release|x64
+		{4E351DBD-3731-48BC-9EE9-8BBA5721F958}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B3C55B3F-9749-4969-A9C3-49B67B231860}
+		SolutionGuid = {16118D77-7276-4CB5-8687-3CCA32FAABA8}
 	EndGlobalSection
 EndGlobal

@@ -5,7 +5,7 @@
 #include <string>
 #include <memory>
 #include "Row.h" 
-#include "CommonDictionary.h"
+#include "../CommonDictionary.h"
 
 class Table
 {

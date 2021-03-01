@@ -4,8 +4,8 @@
 #include <QWidget>
 #include "ui_ChooseTableWidget.h"
 #include <string>
-#include "MainWindow.h"
-#include "Controller.h"
+#include "../MainWindow.h"
+#include "../Controller/Controller.h"
 
 class ChooseTableWidget : public QWidget
 {

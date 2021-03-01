@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E9B69091-92FE-4BAC-9EF9-699AEA7EE11C}</ProjectGuid>
+    <ProjectGuid>{4E351DBD-3731-48BC-9EE9-8BBA5721F958}</ProjectGuid>
     <Keyword>QtVS_v303</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
@@ -91,68 +91,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AddTableWidget.cpp" />
-    <ClCompile Include="ChooseTableWidget.cpp" />
-    <ClCompile Include="Controller\Controller.cpp" />
-    <ClCompile Include="EditTableWidget.cpp" />
-    <ClCompile Include="Model.cpp" />
     <ClCompile Include="Model\Model.cpp" />
     <ClCompile Include="Model\Row.cpp" />
     <ClCompile Include="Model\Table.cpp" />
-    <ClCompile Include="Row.cpp" />
-    <ClCompile Include="ShowTableView.cpp" />
-    <ClCompile Include="StartingWidget.cpp" />
-    <ClCompile Include="Table.cpp" />
     <ClCompile Include="View\AbstractView.cpp" />
     <ClCompile Include="View\AddTableWidget.cpp" />
     <ClCompile Include="View\ChooseTableWidget.cpp" />
     <ClCompile Include="View\EditTableWidget.cpp" />
-    <ClCompile Include="View\MainWindow.cpp" />
     <ClCompile Include="View\ShowTableView.cpp" />
     <ClCompile Include="View\StartingWidget.cpp" />
     <QtRcc Include="MainWindow.qrc" />
-    <CustomBuild Include="View\MainWindow.qrc" />
-    <QtUic Include="AddTableWidget.ui" />
-    <QtUic Include="ChooseTableWidget.ui" />
-    <QtUic Include="EditTableWidget.ui" />
     <QtUic Include="MainWindow.ui" />
     <QtMoc Include="MainWindow.h" />
-    <ClCompile Include="AbstractView.cpp" />
-    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Controller\Controller.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="main.cpp" />
-    <QtUic Include="ShowTableView.ui" />
-    <QtUic Include="StartingWidget.ui" />
-    <CustomBuild Include="View\AddTableWidget.ui" />
-    <CustomBuild Include="View\ChooseTableWidget.ui" />
-    <CustomBuild Include="View\EditTableWidget.ui" />
-    <CustomBuild Include="View\MainWindow.ui" />
-    <CustomBuild Include="View\ShowTableView.ui" />
-    <CustomBuild Include="View\StartingWidget.ui" />
+    <QtUic Include="View\AddTableWidget.ui" />
+    <QtUic Include="View\ChooseTableWidget.ui" />
+    <QtUic Include="View\EditTableWidget.ui" />
+    <QtUic Include="View\ShowTableView.ui" />
+    <QtUic Include="View\StartingWidget.ui" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AbstractView.h" />
+    <ClInclude Include="CommonDictionary.h" />
     <ClInclude Include="Controller\Controller.h" />
     <ClInclude Include="Model\Model.h" />
     <ClInclude Include="Model\Row.h" />
     <ClInclude Include="Model\Table.h" />
     <ClInclude Include="View\AbstractView.h" />
-    <ClInclude Include="View\AddTableWidget.h" />
-    <ClInclude Include="View\ChooseTableWidget.h" />
-    <ClInclude Include="View\EditTableWidget.h" />
-    <ClInclude Include="View\MainWindow.h" />
-    <ClInclude Include="View\ShowTableView.h" />
-    <ClInclude Include="View\StartingWidget.h" />
-    <QtMoc Include="AddTableWidget.h" />
-    <QtMoc Include="EditTableWidget.h" />
-    <ClInclude Include="Row.h" />
-    <QtMoc Include="ShowTableView.h" />
-    <ClInclude Include="Table.h" />
-    <QtMoc Include="ChooseTableWidget.h" />
-    <ClInclude Include="CommonDictionary.h" />
-    <ClInclude Include="Controller.h" />
-    <ClInclude Include="Model.h" />
-    <QtMoc Include="StartingWidget.h" />
+    <QtMoc Include="View\StartingWidget.h" />
+    <QtMoc Include="View\ShowTableView.h" />
+    <QtMoc Include="View\EditTableWidget.h" />
+    <QtMoc Include="View\ChooseTableWidget.h" />
+    <QtMoc Include="View\AddTableWidget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

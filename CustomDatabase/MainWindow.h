@@ -4,13 +4,13 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
 #include <memory>
-#include "Controller.h"
-#include "AbstractView.h"
-#include "StartingWidget.h"
-#include "ChooseTableWidget.h"
-#include "AddTableWidget.h"
-#include "EditTableWidget.h"
-#include "ShowTableView.h"
+#include "Controller/Controller.h"
+#include "View/AbstractView.h"
+#include "View/StartingWidget.h"
+#include "View/ChooseTableWidget.h"
+#include "View/AddTableWidget.h"
+#include "View/EditTableWidget.h"
+#include "View/ShowTableView.h"
 
 class MainWindow : public QMainWindow, public AbstractView
 {

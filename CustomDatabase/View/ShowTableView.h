@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include "ui_ShowTableView.h"
-#include "Controller.h"
+#include "../Controller/Controller.h"
 
 class ShowTableView : public QWidget
 {

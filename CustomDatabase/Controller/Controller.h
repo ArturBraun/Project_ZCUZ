@@ -1,8 +1,8 @@
 #ifndef CONTROLLER
 #define CONTROLLER
 
-#include "Model.h"
-#include "AbstractView.h"
+#include "../Model/Model.h"
+#include "../View/AbstractView.h"
 #include <iostream>
 #include <vector>
 

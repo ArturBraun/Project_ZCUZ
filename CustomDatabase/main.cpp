@@ -1,6 +1,6 @@
 #include "MainWindow.h"
-#include "Model.h"
-#include "Controller.h"
+#include "Model/Model.h"
+#include "Controller/Controller.h"
 #include <memory>
 #include <QtWidgets/QApplication>
 
