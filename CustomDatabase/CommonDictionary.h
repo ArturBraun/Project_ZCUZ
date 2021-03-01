@@ -10,6 +10,10 @@
 #define TYPE_DOUBLE std::string("DOUBLE")
 #define TYPE_STRING std::string("STRING")
 
+#define TYPE_INT_DEFAULT_VALUE 0
+#define TYPE_DOUBLE_DEFAULT_VALUE 0.0
+#define TYPE_STRING_DEFAULT_VALUE std::string("")
+
 #define var std::variant<int, double, std::string>
 #define ColumnsData std::unordered_map<int, std::pair<std::string, std::string>> // value => first - column name, second - column type
 

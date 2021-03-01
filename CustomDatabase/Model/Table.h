@@ -17,6 +17,12 @@ public:
 	int getNumberOfColumns();
 	std::string getColumnType(int columnId);
 	std::vector<Row> getSortedRows(int sortColumnId = 0);
+	void createNewRow();
+
+	template<typename T> void updateValueInRow(int rowId, int columnId, T& value)
+	{
+		this->rows[rowId].setValueForColumn(columnId, value);
+	}
 	
 
 private:

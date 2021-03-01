@@ -16,6 +16,9 @@ public:
 	EditTableWidget(int currentTableId, std::shared_ptr<Controller> controllerPtr, QWidget *parent = Q_NULLPTR);
 	~EditTableWidget();
 
+	void addRowToogled();
+	void deleteRowToogled();
+
 private:
 	Ui::EditTableWidget ui;
 	std::shared_ptr<Table> currentTable;

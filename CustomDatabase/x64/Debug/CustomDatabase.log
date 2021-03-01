@@ -1,20 +1,9 @@
-﻿  Model.cpp
-  Row.cpp
-  Table.cpp
-  AbstractView.cpp
-  AddTableWidget.cpp
+﻿  moc View\EditTableWidget.h
+  MainWindow.cpp
   ChooseTableWidget.cpp
   EditTableWidget.cpp
-  ShowTableView.cpp
-  StartingWidget.cpp
-  Controller.cpp
-  MainWindow.cpp
   main.cpp
-  qrc_MainWindow.cpp
-  moc_MainWindow.cpp
-  moc_StartingWidget.cpp
-  moc_ShowTableView.cpp
-  moc_EditTableWidget.cpp
   moc_ChooseTableWidget.cpp
-  moc_AddTableWidget.cpp
+  moc_EditTableWidget.cpp
+  moc_MainWindow.cpp
   CustomDatabase.vcxproj -> D:\studia_OKNO\zaawansowaneC++\Project\x64\Debug\CustomDatabase.exe
