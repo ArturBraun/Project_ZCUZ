@@ -8,6 +8,7 @@
 #include <qmessagebox.h>
 #include <vector>
 #include <string>
+#include "../Model/Row.h"
 
 class EditTableWidget : public QWidget
 {

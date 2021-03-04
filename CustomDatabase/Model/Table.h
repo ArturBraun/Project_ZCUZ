@@ -18,6 +18,7 @@ public:
 	std::string getColumnType(int columnId);
 	std::vector<Row> getSortedRows(int sortColumnId = 0);
 	void createNewRow();
+	void deleteRow(int rowId);
 
 	template<typename T> void updateValueInRow(int rowId, int columnId, T& value)
 	{

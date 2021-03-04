@@ -33,7 +33,9 @@ std::vector<Row> Table::getSortedRows(int sortColumnId)
 void Table::createNewRow()
 {
 	Row row;
-	for (int i = 0; i < this->columnsData.size(); ++i)
+	row.setValueForColumn(0, (int)this->rows.size() + 1); // set value for column 'id wiersza'
+
+	for (int i = 1; i < this->columnsData.size(); ++i)
 	{
 		std::string columnType = columnsData[i].second;
 		if (columnType == TYPE_INT)
@@ -51,6 +53,17 @@ void Table::createNewRow()
 	}
 
 	this->rows.push_back(row);
+}
+
+void Table::deleteRow(int rowId)
+{
+	this->rows.erase(this->rows.begin() + rowId);
+	
+	// refresh values for column 'id wiersza' after delete
+	for (int i = rowId; i < this->rows.size(); ++i)
+	{
+		this->rows[i].setValueForColumn(0, i + 1);
+	}
 }
 
 

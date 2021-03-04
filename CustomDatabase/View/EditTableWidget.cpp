@@ -6,11 +6,14 @@ EditTableWidget::EditTableWidget(int currentTableId, std::shared_ptr<Controller>
 	ui.setupUi(this);
 	ui.rowIdQSpinBox->setValue(1);
 	ui.rowIdQSpinBox->setMinimum(1);
+	ui.deleteQPushButton->setEnabled(false);
 
 	this->currentTable = controllerPtr->getTablePtr(currentTableId);
 	int numberOfColumns = this->currentTable->getNumberOfColumns();
 	ui.tableQTableWidget->setColumnCount(numberOfColumns);
+	ui.tableQTableWidget->verticalHeader()->setVisible(false);
 	
+	// Load Column Names
 	QStringList columnNamesQStringList;
 	for (int i = 0; i < numberOfColumns; ++i)
 	{
@@ -22,8 +25,31 @@ EditTableWidget::EditTableWidget(int currentTableId, std::shared_ptr<Controller>
 	ui.tableQTableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 	ui.columnNameQComboBox->setCurrentIndex(0);
 
-	ui.deleteQPushButton->setEnabled(false);
+	//Load Existing Rows
+	std::vector<Row> rows = this->currentTable->getSortedRows();
+	for (int rowId = 0; rowId < rows.size(); ++rowId)
+	{
+		ui.tableQTableWidget->insertRow(rowId);
+		for (int columnId = 0; columnId < numberOfColumns; ++columnId)
+		{
+			std::string colummnType = this->currentTable->getColumnType(columnId);
 
+			if (colummnType == TYPE_STRING)
+			{
+				this->createNewTableItem(rowId, columnId, QString::fromStdString(rows[rowId].getValueForColumn<std::string>(columnId)));
+			}
+			else if (colummnType == TYPE_DOUBLE)
+			{
+				this->createNewTableItem(rowId, columnId, QString::number(rows[rowId].getValueForColumn<double>(columnId)));
+			}
+			else if (colummnType == TYPE_INT)
+			{
+				this->createNewTableItem(rowId, columnId, QString::number(rows[rowId].getValueForColumn<int>(columnId)));
+			}
+		}
+	}
+
+	// Connect signals and slots
 	QObject::connect(ui.addRowQRadioButton, &QRadioButton::toggled, this, &EditTableWidget::addRowToggled);
 	QObject::connect(ui.deleteRowQRadioButton, &QRadioButton::toggled, this, &EditTableWidget::deleteRowToggled);
 
@@ -111,6 +137,7 @@ void EditTableWidget::addRowClicked()
 				recordId = ui.tableQTableWidget->rowCount() + 1;
 				this->currentTable->createNewRow();
 				this->createGuiNewRow();
+				ui.rowIdQSpinBox->setValue(ui.rowIdQSpinBox->value() + 1);
 			}
 			this->editTableCell(recordId, columnId, newValueVar);
 		}
@@ -174,6 +201,17 @@ void EditTableWidget::editTableCell(int rowId, int columnId, var& newValue)
 
 void EditTableWidget::deleteRowClicked()
 {
+	int rowId = ui.rowIdQSpinBox->value();
+	if (rowId > 0 && rowId <= ui.tableQTableWidget->rowCount())
+	{
+		this->currentTable->deleteRow(rowId - 1);
+		ui.tableQTableWidget->removeRow(rowId - 1);
+	}
+
+	for (int i = rowId - 1; i < ui.tableQTableWidget->rowCount(); ++i)
+	{
+		ui.tableQTableWidget->item(i, 0)->setText(QString::number(i + 1));
+	}
 
 }    
 
