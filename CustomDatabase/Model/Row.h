@@ -7,6 +7,8 @@ class Row
 {
 public:
 	Row();
+	Row& Row::operator =(const Row& rightRow);
+	Row::Row(const Row& rightRow);
 
 	template<typename T> void setValueForColumn(int columnId, T value)
 	{

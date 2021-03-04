@@ -5,6 +5,7 @@
 #include <QWidget>
 #include "ui_EditTableWidget.h"
 #include "../Controller/Controller.h"
+#include <qmessagebox.h>
 #include <vector>
 #include <string>
 
@@ -16,8 +17,15 @@ public:
 	EditTableWidget(int currentTableId, std::shared_ptr<Controller> controllerPtr, QWidget *parent = Q_NULLPTR);
 	~EditTableWidget();
 
-	void addRowToogled();
-	void deleteRowToogled();
+	void addRowToggled();
+	void deleteRowToggled();
+
+	void addRowClicked();
+	void deleteRowClicked();
+
+	void editTableCell(int rowId, int columnId, var& newValue);
+	void createGuiNewRow();
+	void createNewTableItem(int x, int y, QString& text);
 
 private:
 	Ui::EditTableWidget ui;

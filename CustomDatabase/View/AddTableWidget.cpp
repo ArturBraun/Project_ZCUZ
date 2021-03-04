@@ -43,7 +43,21 @@ void AddTableWidget::cancelButtonClicked()
 
 void AddTableWidget::saveButtonClicked()
 {
-	if (!ui.tableNameQLineEdit->text().isEmpty())
+	std::string errorMessage = "";
+	bool errorAppeared = false;
+
+	if (ui.tableNameQLineEdit->text().isEmpty())
+	{
+		errorAppeared = true;
+		errorMessage += "Nazwa tabeli nie moze byc pusta.\n";
+	}
+	if (ui.tableQTableWidget->rowCount() < 2)
+	{
+		errorAppeared = true;
+		errorMessage += "Tabela nie moze zawierac tylko kolumny 'id wiersza'. Nalezy dodac wiecej kolumn.\n";
+	}
+
+	if (!errorAppeared)
 	{
 		ColumnsData columnsData;
 		for (int i = 0; i < ui.tableQTableWidget->rowCount(); ++i)
@@ -57,7 +71,7 @@ void AddTableWidget::saveButtonClicked()
 	else
 	{
 		int ret = QMessageBox::critical(this, tr("Blad"),
-					tr("Nazwa tabeli nie moze byc pusta."),
+					tr(errorMessage.c_str()),
 					QMessageBox::Ok);
 	}
 
