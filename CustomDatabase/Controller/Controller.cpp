@@ -28,4 +28,8 @@ std::shared_ptr<Table> Controller::getTablePtr(int tableId)
 {
 	return this->modelPtr->getTablePtr(tableId);
 }
+bool Controller::isTableNameUsed(std::string& tableName)
+{
+	return this->modelPtr->isTableNameUsed(tableName);
+}
 

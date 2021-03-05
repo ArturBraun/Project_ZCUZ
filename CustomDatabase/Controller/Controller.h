@@ -18,6 +18,7 @@ public:
 	void createNewTable(std::string& tableName, ColumnsData& columnTypesAndNames);
 	void deleteTable(int tableId);
 	std::shared_ptr<Table> getTablePtr(int tableId);
+	bool isTableNameUsed(std::string& tableName);
 
 private:
 	std::shared_ptr<AbstractView> viewPtr;

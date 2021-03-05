@@ -22,11 +22,68 @@ int Table::getNumberOfColumns()
 {
 	return this->columnsData.size();
 }
-std::vector<Row> Table::getSortedRows(int sortColumnId)
+std::vector<Row> Table::getSortedRows(int sortColumnId, bool sortDescending)
 {
 	std::vector<Row> sortedRows = this->rows;
+	std::string columnType = this->getColumnType(sortColumnId);
 
-	// TODO: dodac sortowanie wedlug id kolumny
+	// check if ascending or descending
+	if (!sortDescending)
+	{
+		// check column type
+		if (columnType == TYPE_STRING)
+		{
+			std::sort(sortedRows.begin(), sortedRows.end(),
+				[&sortColumnId](Row& firstRow, Row& secondRow) -> bool
+			{
+				return firstRow.getValueForColumn<std::string>(sortColumnId) < secondRow.getValueForColumn<std::string>(sortColumnId);
+			});
+		}
+		else if (columnType == TYPE_DOUBLE)
+		{
+			std::sort(sortedRows.begin(), sortedRows.end(),
+				[&sortColumnId](Row& firstRow, Row& secondRow) -> bool
+			{
+				return firstRow.getValueForColumn<double>(sortColumnId) < secondRow.getValueForColumn<double>(sortColumnId);
+			});
+		}
+		else if (columnType == TYPE_INT)
+		{
+			std::sort(sortedRows.begin(), sortedRows.end(),
+				[&sortColumnId](Row& firstRow, Row& secondRow) -> bool
+			{
+				return firstRow.getValueForColumn<int>(sortColumnId) < secondRow.getValueForColumn<int>(sortColumnId);
+			});
+		}
+	}
+	else
+	{
+		// check column type
+		if (columnType == TYPE_STRING)
+		{
+			std::sort(sortedRows.begin(), sortedRows.end(),
+				[&sortColumnId](Row& firstRow, Row& secondRow) -> bool
+			{
+				return firstRow.getValueForColumn<std::string>(sortColumnId) > secondRow.getValueForColumn<std::string>(sortColumnId);
+			});
+		}
+		else if (columnType == TYPE_DOUBLE)
+		{
+			std::sort(sortedRows.begin(), sortedRows.end(),
+				[&sortColumnId](Row& firstRow, Row& secondRow) -> bool
+			{
+				return firstRow.getValueForColumn<double>(sortColumnId) > secondRow.getValueForColumn<double>(sortColumnId);
+			});
+		}
+		else if (columnType == TYPE_INT)
+		{
+			std::sort(sortedRows.begin(), sortedRows.end(),
+				[&sortColumnId](Row& firstRow, Row& secondRow) -> bool
+			{
+				return firstRow.getValueForColumn<int>(sortColumnId) > secondRow.getValueForColumn<int>(sortColumnId);
+			});
+		}
+	}
 
 	return sortedRows;
 }

@@ -5,13 +5,14 @@
 #include "ui_AddTableWidget.h"
 #include "../CommonDictionary.h"
 #include <qmessagebox.h>
+#include "../Controller/Controller.h"
 
 class AddTableWidget : public QWidget
 {
 	Q_OBJECT
 
 public:
-	AddTableWidget(QWidget *parent = Q_NULLPTR);
+	AddTableWidget(std::shared_ptr<Controller> controllerPtr, QWidget *parent = Q_NULLPTR);
 	~AddTableWidget();
 
 public slots:
@@ -25,10 +26,11 @@ protected:
 
 signals:
 	void restoreDefaultWidget();
-	void createNewTable(std::string& tableName, ColumnsData& columnsData);
+	void createNewTable();
 
 private:
 	Ui::AddTableWidget ui;
+	std::shared_ptr<Controller> controllerPtr;
 };
 
 #endif ADDTABLEWIDGET

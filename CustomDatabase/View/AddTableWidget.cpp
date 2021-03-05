@@ -1,7 +1,8 @@
 #include "AddTableWidget.h"
 
-AddTableWidget::AddTableWidget(QWidget *parent)
-	: QWidget(parent)
+AddTableWidget::AddTableWidget(std::shared_ptr<Controller> controllerPtr, QWidget *parent)
+	: QWidget(parent),
+	controllerPtr(controllerPtr)
 {
 	ui.setupUi(this);
 
@@ -45,8 +46,9 @@ void AddTableWidget::saveButtonClicked()
 {
 	std::string errorMessage = "";
 	bool errorAppeared = false;
+	QString tableNameQString = ui.tableNameQLineEdit->text().simplified();
 
-	if (ui.tableNameQLineEdit->text().isEmpty())
+	if (tableNameQString.isEmpty())
 	{
 		errorAppeared = true;
 		errorMessage += "Nazwa tabeli nie moze byc pusta.\n";
@@ -55,6 +57,11 @@ void AddTableWidget::saveButtonClicked()
 	{
 		errorAppeared = true;
 		errorMessage += "Tabela nie moze zawierac tylko kolumny 'id wiersza'. Nalezy dodac wiecej kolumn.\n";
+	}
+	if (this->controllerPtr->isTableNameUsed(tableNameQString.toStdString()))
+	{
+		errorAppeared = true;
+		errorMessage += "Tabela o takiej nazwie juz istnieje. Nalezy zmienic nazwe tworzonej tabeli.\n";
 	}
 
 	if (!errorAppeared)
@@ -65,8 +72,8 @@ void AddTableWidget::saveButtonClicked()
 			std::pair<std::string, std::string> columnData = std::make_pair(ui.tableQTableWidget->item(i,0)->text().toStdString(), ui.tableQTableWidget->item(i, 1)->text().toStdString());
 			columnsData[i] = columnData;
 		}
-
-		emit createNewTable(ui.tableNameQLineEdit->text().toStdString(), columnsData);
+		this->controllerPtr->createNewTable(tableNameQString.toStdString(), columnsData);
+		emit createNewTable();
 	}
 	else
 	{

@@ -31,3 +31,16 @@ std::shared_ptr<Table> Model::getTablePtr(int tableId)
 	return this->tables[tableId];
 }
 
+bool Model::isTableNameUsed(std::string& tableName)
+{
+	for (auto& table : tables)
+	{
+		if (table->getTableName() == tableName)
+		{
+			return true;
+		}
+	}
+
+	return false;
+}
+

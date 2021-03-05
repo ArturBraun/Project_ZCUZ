@@ -26,7 +26,7 @@ public slots:
     void editRowsClicked();
     void showTableClicked();
     void addTableClicked();
-    void createNewTableClicked(std::string& tableName, ColumnsData& columnsData);
+    void createNewTableClicked();
 
     void restoreDefaultView();   
     void tableChosen(int tableId, std::string viewType);

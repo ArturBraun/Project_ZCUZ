@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[16];
-    char stringdata0[258];
+    QByteArrayData data[12];
+    char stringdata0[162];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,25 +39,18 @@ QT_MOC_LITERAL(3, 31, 15), // "editRowsClicked"
 QT_MOC_LITERAL(4, 47, 16), // "showTableClicked"
 QT_MOC_LITERAL(5, 64, 15), // "addTableClicked"
 QT_MOC_LITERAL(6, 80, 21), // "createNewTableClicked"
-QT_MOC_LITERAL(7, 102, 12), // "std::string&"
-QT_MOC_LITERAL(8, 115, 9), // "tableName"
-QT_MOC_LITERAL(9, 125, 60), // "std::unordered_map<int,std::p..."
-QT_MOC_LITERAL(10, 186, 11), // "columnsData"
-QT_MOC_LITERAL(11, 198, 18), // "restoreDefaultView"
-QT_MOC_LITERAL(12, 217, 11), // "tableChosen"
-QT_MOC_LITERAL(13, 229, 7), // "tableId"
-QT_MOC_LITERAL(14, 237, 11), // "std::string"
-QT_MOC_LITERAL(15, 249, 8) // "viewType"
+QT_MOC_LITERAL(7, 102, 18), // "restoreDefaultView"
+QT_MOC_LITERAL(8, 121, 11), // "tableChosen"
+QT_MOC_LITERAL(9, 133, 7), // "tableId"
+QT_MOC_LITERAL(10, 141, 11), // "std::string"
+QT_MOC_LITERAL(11, 153, 8) // "viewType"
 
     },
     "MainWindow\0deleteTableClicked\0\0"
     "editRowsClicked\0showTableClicked\0"
     "addTableClicked\0createNewTableClicked\0"
-    "std::string&\0tableName\0"
-    "std::unordered_map<int,std::pair<std::string,std::string> >&\0"
-    "columnsData\0restoreDefaultView\0"
-    "tableChosen\0tableId\0std::string\0"
-    "viewType"
+    "restoreDefaultView\0tableChosen\0tableId\0"
+    "std::string\0viewType"
 };
 #undef QT_MOC_LITERAL
 
@@ -79,18 +72,18 @@ static const uint qt_meta_data_MainWindow[] = {
        3,    0,   50,    2, 0x0a /* Public */,
        4,    0,   51,    2, 0x0a /* Public */,
        5,    0,   52,    2, 0x0a /* Public */,
-       6,    2,   53,    2, 0x0a /* Public */,
-      11,    0,   58,    2, 0x0a /* Public */,
-      12,    2,   59,    2, 0x0a /* Public */,
+       6,    0,   53,    2, 0x0a /* Public */,
+       7,    0,   54,    2, 0x0a /* Public */,
+       8,    2,   55,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 7, 0x80000000 | 9,    8,   10,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int, 0x80000000 | 14,   13,   15,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int, 0x80000000 | 10,    9,   11,
 
        0        // eod
 };
@@ -105,7 +98,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->editRowsClicked(); break;
         case 2: _t->showTableClicked(); break;
         case 3: _t->addTableClicked(); break;
-        case 4: _t->createNewTableClicked((*reinterpret_cast< std::string(*)>(_a[1])),(*reinterpret_cast< std::unordered_map<int,std::pair<std::string,std::string> >(*)>(_a[2]))); break;
+        case 4: _t->createNewTableClicked(); break;
         case 5: _t->restoreDefaultView(); break;
         case 6: _t->tableChosen((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< std::string(*)>(_a[2]))); break;
         default: ;

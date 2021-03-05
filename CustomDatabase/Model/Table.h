@@ -6,6 +6,7 @@
 #include <memory>
 #include "Row.h" 
 #include "../CommonDictionary.h"
+#include <algorithm>
 
 class Table
 {
@@ -16,7 +17,7 @@ public:
 	std::string getColumnName(int columnId);
 	int getNumberOfColumns();
 	std::string getColumnType(int columnId);
-	std::vector<Row> getSortedRows(int sortColumnId = 0);
+	std::vector<Row> getSortedRows(int sortColumnId = 0, bool sortDescending = false);
 	void createNewRow();
 	void deleteRow(int rowId);
 

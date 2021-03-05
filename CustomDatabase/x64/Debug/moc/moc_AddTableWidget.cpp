@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_AddTableWidget_t {
-    QByteArrayData data[12];
-    char stringdata0[235];
+    QByteArrayData data[8];
+    char stringdata0[139];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,20 +36,14 @@ QT_MOC_LITERAL(0, 0, 14), // "AddTableWidget"
 QT_MOC_LITERAL(1, 15, 20), // "restoreDefaultWidget"
 QT_MOC_LITERAL(2, 36, 0), // ""
 QT_MOC_LITERAL(3, 37, 14), // "createNewTable"
-QT_MOC_LITERAL(4, 52, 12), // "std::string&"
-QT_MOC_LITERAL(5, 65, 9), // "tableName"
-QT_MOC_LITERAL(6, 75, 60), // "std::unordered_map<int,std::p..."
-QT_MOC_LITERAL(7, 136, 11), // "columnsData"
-QT_MOC_LITERAL(8, 148, 19), // "cancelButtonClicked"
-QT_MOC_LITERAL(9, 168, 17), // "saveButtonClicked"
-QT_MOC_LITERAL(10, 186, 22), // "addColumnButtonClicked"
-QT_MOC_LITERAL(11, 209, 25) // "deleteColumnButtonClicked"
+QT_MOC_LITERAL(4, 52, 19), // "cancelButtonClicked"
+QT_MOC_LITERAL(5, 72, 17), // "saveButtonClicked"
+QT_MOC_LITERAL(6, 90, 22), // "addColumnButtonClicked"
+QT_MOC_LITERAL(7, 113, 25) // "deleteColumnButtonClicked"
 
     },
     "AddTableWidget\0restoreDefaultWidget\0"
-    "\0createNewTable\0std::string&\0tableName\0"
-    "std::unordered_map<int,std::pair<std::string,std::string> >&\0"
-    "columnsData\0cancelButtonClicked\0"
+    "\0createNewTable\0cancelButtonClicked\0"
     "saveButtonClicked\0addColumnButtonClicked\0"
     "deleteColumnButtonClicked"
 };
@@ -70,17 +64,17 @@ static const uint qt_meta_data_AddTableWidget[] = {
 
  // signals: name, argc, parameters, tag, flags
        1,    0,   44,    2, 0x06 /* Public */,
-       3,    2,   45,    2, 0x06 /* Public */,
+       3,    0,   45,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       8,    0,   50,    2, 0x0a /* Public */,
-       9,    0,   51,    2, 0x0a /* Public */,
-      10,    0,   52,    2, 0x0a /* Public */,
-      11,    0,   53,    2, 0x0a /* Public */,
+       4,    0,   46,    2, 0x0a /* Public */,
+       5,    0,   47,    2, 0x0a /* Public */,
+       6,    0,   48,    2, 0x0a /* Public */,
+       7,    0,   49,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 4, 0x80000000 | 6,    5,    7,
+    QMetaType::Void,
 
  // slots: parameters
     QMetaType::Void,
@@ -98,7 +92,7 @@ void AddTableWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->restoreDefaultWidget(); break;
-        case 1: _t->createNewTable((*reinterpret_cast< std::string(*)>(_a[1])),(*reinterpret_cast< std::unordered_map<int,std::pair<std::string,std::string> >(*)>(_a[2]))); break;
+        case 1: _t->createNewTable(); break;
         case 2: _t->cancelButtonClicked(); break;
         case 3: _t->saveButtonClicked(); break;
         case 4: _t->addColumnButtonClicked(); break;
@@ -115,13 +109,14 @@ void AddTableWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
             }
         }
         {
-            using _t = void (AddTableWidget::*)(std::string & , std::unordered_map<int,std::pair<std::string,std::string>> & );
+            using _t = void (AddTableWidget::*)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&AddTableWidget::createNewTable)) {
                 *result = 1;
                 return;
             }
         }
     }
+    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject AddTableWidget::staticMetaObject = { {
@@ -171,10 +166,9 @@ void AddTableWidget::restoreDefaultWidget()
 }
 
 // SIGNAL 1
-void AddTableWidget::createNewTable(std::string & _t1, std::unordered_map<int,std::pair<std::string,std::string>> & _t2)
+void AddTableWidget::createNewTable()
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
-    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE
