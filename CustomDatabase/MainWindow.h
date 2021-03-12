@@ -12,16 +12,19 @@
 #include "View/EditTableWidget.h"
 #include "View/ShowTableView.h"
 
+//! MainWindow class representing main window in application GUI
 class MainWindow : public QMainWindow, public AbstractView
 {
     Q_OBJECT
 
 public:
+    //! Class constructor
     MainWindow(QWidget *parent = Q_NULLPTR);
-
+    //! Function that sets pointer to Controller class
     void setController(std::shared_ptr<Controller> controllerPtr);
 
 public slots:
+    //! Public slot which is run when delete table button is clicked
     void deleteTableClicked();
     void editRowsClicked();
     void showTableClicked();
