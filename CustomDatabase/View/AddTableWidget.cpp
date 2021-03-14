@@ -73,7 +73,7 @@ void AddTableWidget::saveButtonClicked()
 			columnsData[i] = columnData;
 		}
 		this->controllerPtr->createNewTable(tableNameQString.toStdString(), columnsData);
-		emit createNewTable();
+		emit restoreDefaultWidget();
 	}
 	else
 	{

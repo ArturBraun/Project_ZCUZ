@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mainwindow_4',['MainWindow',['../class_main_window.html',1,'']]]
+  ['abstractview_107',['AbstractView',['../class_abstract_view.html',1,'']]],
+  ['addtablewidget_108',['AddTableWidget',['../class_add_table_widget.html',1,'']]]
 ];

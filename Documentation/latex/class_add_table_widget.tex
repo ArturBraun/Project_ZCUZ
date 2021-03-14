@@ -1,0 +1,170 @@
+\hypertarget{class_add_table_widget}{}\doxysection{Add\+Table\+Widget Class Reference}
+\label{class_add_table_widget}\index{AddTableWidget@{AddTableWidget}}
+
+
+Class responsible for G\+UI for creating new table.  
+
+
+
+
+{\ttfamily \#include $<$Add\+Table\+Widget.\+h$>$}
+
+Inheritance diagram for Add\+Table\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_table_widget}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_add_table_widget_ac67e63a79ba5d8ddffb146402ea833df}{cancel\+Button\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Public slot which is run when cancel button is clicked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_add_table_widget_a79fe804ec6afb632543662c4f73baa28}{save\+Button\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Public slot which is run when save button is clicked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_add_table_widget_aafa4fc03ffe15533e0bccdba9d18813f}{add\+Column\+Button\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Public slot which is run when add column button is clicked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_add_table_widget_a07092f117609b923610eed7fdd9e7b3a}{delete\+Column\+Button\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Public slot which is run when delete column button is clicked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_add_table_widget_a8359e3f2cd9e2f876bc17b57a89ad673}{restore\+Default\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Signal that is emitted when user ends action in this widget by clicking suitable button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_add_table_widget_a573080c1e5932d20611648996a5dc6d3}{Add\+Table\+Widget}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$ \mbox{\hyperlink{class_add_table_widget_a7c55817f016f1843f5777f14f992761f}{controller\+Ptr}}, Q\+Widget $\ast$parent=Q\+\_\+\+N\+U\+L\+L\+P\+TR)
+\begin{DoxyCompactList}\small\item\em Class constructor. It sets also pointer to controller class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_add_table_widget_a79e86d20317bbce646d503feb27bf03a}{$\sim$\+Add\+Table\+Widget}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_add_table_widget_a5a467cd98dcc07768a94d52d1eb834ef}{create\+New\+Table\+Item}} (int x, int y, std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Helper function responsible for creating new table item in G\+UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Add\+Table\+Widget \mbox{\hyperlink{class_add_table_widget_ac09433092fb81b310e26c4a5b2cce432}{ui}}
+\begin{DoxyCompactList}\small\item\em Qt user interface variable. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$ \mbox{\hyperlink{class_add_table_widget_a7c55817f016f1843f5777f14f992761f}{controller\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Pointer to controller class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for G\+UI for creating new table. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_add_table_widget_a573080c1e5932d20611648996a5dc6d3}\label{class_add_table_widget_a573080c1e5932d20611648996a5dc6d3}} 
+\index{AddTableWidget@{AddTableWidget}!AddTableWidget@{AddTableWidget}}
+\index{AddTableWidget@{AddTableWidget}!AddTableWidget@{AddTableWidget}}
+\doxysubsubsection{\texorpdfstring{AddTableWidget()}{AddTableWidget()}}
+{\footnotesize\ttfamily Add\+Table\+Widget\+::\+Add\+Table\+Widget (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$}]{controller\+Ptr,  }\item[{Q\+Widget $\ast$}]{parent = {\ttfamily Q\+\_\+NULLPTR} }\end{DoxyParamCaption})}
+
+
+
+Class constructor. It sets also pointer to controller class. 
+
+\mbox{\Hypertarget{class_add_table_widget_a79e86d20317bbce646d503feb27bf03a}\label{class_add_table_widget_a79e86d20317bbce646d503feb27bf03a}} 
+\index{AddTableWidget@{AddTableWidget}!````~AddTableWidget@{$\sim$AddTableWidget}}
+\index{````~AddTableWidget@{$\sim$AddTableWidget}!AddTableWidget@{AddTableWidget}}
+\doxysubsubsection{\texorpdfstring{$\sim$AddTableWidget()}{~AddTableWidget()}}
+{\footnotesize\ttfamily Add\+Table\+Widget\+::$\sim$\+Add\+Table\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_add_table_widget_aafa4fc03ffe15533e0bccdba9d18813f}\label{class_add_table_widget_aafa4fc03ffe15533e0bccdba9d18813f}} 
+\index{AddTableWidget@{AddTableWidget}!addColumnButtonClicked@{addColumnButtonClicked}}
+\index{addColumnButtonClicked@{addColumnButtonClicked}!AddTableWidget@{AddTableWidget}}
+\doxysubsubsection{\texorpdfstring{addColumnButtonClicked}{addColumnButtonClicked}}
+{\footnotesize\ttfamily void Add\+Table\+Widget\+::add\+Column\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Public slot which is run when add column button is clicked. 
+
+\mbox{\Hypertarget{class_add_table_widget_ac67e63a79ba5d8ddffb146402ea833df}\label{class_add_table_widget_ac67e63a79ba5d8ddffb146402ea833df}} 
+\index{AddTableWidget@{AddTableWidget}!cancelButtonClicked@{cancelButtonClicked}}
+\index{cancelButtonClicked@{cancelButtonClicked}!AddTableWidget@{AddTableWidget}}
+\doxysubsubsection{\texorpdfstring{cancelButtonClicked}{cancelButtonClicked}}
+{\footnotesize\ttfamily void Add\+Table\+Widget\+::cancel\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Public slot which is run when cancel button is clicked. 
+
+\mbox{\Hypertarget{class_add_table_widget_a5a467cd98dcc07768a94d52d1eb834ef}\label{class_add_table_widget_a5a467cd98dcc07768a94d52d1eb834ef}} 
+\index{AddTableWidget@{AddTableWidget}!createNewTableItem@{createNewTableItem}}
+\index{createNewTableItem@{createNewTableItem}!AddTableWidget@{AddTableWidget}}
+\doxysubsubsection{\texorpdfstring{createNewTableItem()}{createNewTableItem()}}
+{\footnotesize\ttfamily void Add\+Table\+Widget\+::create\+New\+Table\+Item (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Helper function responsible for creating new table item in G\+UI. 
+
+\mbox{\Hypertarget{class_add_table_widget_a07092f117609b923610eed7fdd9e7b3a}\label{class_add_table_widget_a07092f117609b923610eed7fdd9e7b3a}} 
+\index{AddTableWidget@{AddTableWidget}!deleteColumnButtonClicked@{deleteColumnButtonClicked}}
+\index{deleteColumnButtonClicked@{deleteColumnButtonClicked}!AddTableWidget@{AddTableWidget}}
+\doxysubsubsection{\texorpdfstring{deleteColumnButtonClicked}{deleteColumnButtonClicked}}
+{\footnotesize\ttfamily void Add\+Table\+Widget\+::delete\+Column\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Public slot which is run when delete column button is clicked. 
+
+\mbox{\Hypertarget{class_add_table_widget_a8359e3f2cd9e2f876bc17b57a89ad673}\label{class_add_table_widget_a8359e3f2cd9e2f876bc17b57a89ad673}} 
+\index{AddTableWidget@{AddTableWidget}!restoreDefaultWidget@{restoreDefaultWidget}}
+\index{restoreDefaultWidget@{restoreDefaultWidget}!AddTableWidget@{AddTableWidget}}
+\doxysubsubsection{\texorpdfstring{restoreDefaultWidget}{restoreDefaultWidget}}
+{\footnotesize\ttfamily void Add\+Table\+Widget\+::restore\+Default\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal that is emitted when user ends action in this widget by clicking suitable button. 
+
+\mbox{\Hypertarget{class_add_table_widget_a79fe804ec6afb632543662c4f73baa28}\label{class_add_table_widget_a79fe804ec6afb632543662c4f73baa28}} 
+\index{AddTableWidget@{AddTableWidget}!saveButtonClicked@{saveButtonClicked}}
+\index{saveButtonClicked@{saveButtonClicked}!AddTableWidget@{AddTableWidget}}
+\doxysubsubsection{\texorpdfstring{saveButtonClicked}{saveButtonClicked}}
+{\footnotesize\ttfamily void Add\+Table\+Widget\+::save\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Public slot which is run when save button is clicked. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_add_table_widget_a7c55817f016f1843f5777f14f992761f}\label{class_add_table_widget_a7c55817f016f1843f5777f14f992761f}} 
+\index{AddTableWidget@{AddTableWidget}!controllerPtr@{controllerPtr}}
+\index{controllerPtr@{controllerPtr}!AddTableWidget@{AddTableWidget}}
+\doxysubsubsection{\texorpdfstring{controllerPtr}{controllerPtr}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_controller}{Controller}}$>$ Add\+Table\+Widget\+::controller\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to controller class. 
+
+\mbox{\Hypertarget{class_add_table_widget_ac09433092fb81b310e26c4a5b2cce432}\label{class_add_table_widget_ac09433092fb81b310e26c4a5b2cce432}} 
+\index{AddTableWidget@{AddTableWidget}!ui@{ui}}
+\index{ui@{ui}!AddTableWidget@{AddTableWidget}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Add\+Table\+Widget Add\+Table\+Widget\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Qt user interface variable. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Custom\+Database/\+View/\mbox{\hyperlink{_add_table_widget_8h}{Add\+Table\+Widget.\+h}}\item 
+Custom\+Database/\+View/\mbox{\hyperlink{_add_table_widget_8cpp}{Add\+Table\+Widget.\+cpp}}\end{DoxyCompactItemize}

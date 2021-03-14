@@ -66,12 +66,6 @@ void MainWindow::addTableClicked()
     ui.centralQGridLayout->addWidget(this->centralChild);
 
     QObject::connect(addTableWidget, &AddTableWidget::restoreDefaultWidget, this, &MainWindow::restoreDefaultView);
-    QObject::connect(addTableWidget, &AddTableWidget::createNewTable, this, &MainWindow::createNewTableClicked);
-}
-
-void MainWindow::createNewTableClicked()
-{
-    this->restoreDefaultView();
 }
 
 void MainWindow::tableChosen(int tableId, std::string viewType)

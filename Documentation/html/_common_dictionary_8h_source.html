@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.19"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ZCUZ project: CommonDictionary.h Source File</title>
+<title>ZCUZ project: CustomDatabase/CommonDictionary.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,12 +60,17 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_73ace43148687c01bb1f112496923b43.html">CustomDatabase</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">CommonDictionary.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COMMONDICTIONARY</span></div>
+<a href="_common_dictionary_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COMMONDICTIONARY</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define COMMONDICTIONARY</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;variant&gt;</span></div>
@@ -74,24 +78,24 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define TYPE_INT std::string(&quot;INT&quot;)</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define TYPE_DOUBLE std::string(&quot;DOUBLE&quot;)</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define TYPE_STRING std::string(&quot;STRING&quot;)</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#a56e5f9a95536838408fcca8f22d541b4">    9</a></span>&#160;<span class="preprocessor">#define TYPE_INT std::string(&quot;INT&quot;)</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#ac87fa650bc0dcd101b39e15ecdb57477">   10</a></span>&#160;<span class="preprocessor">#define TYPE_DOUBLE std::string(&quot;DOUBLE&quot;)</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#a4e4e428e3a6a191834e3ff63bd301866">   11</a></span>&#160;<span class="preprocessor">#define TYPE_STRING std::string(&quot;STRING&quot;)</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define TYPE_INT_DEFAULT_VALUE 0</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define TYPE_DOUBLE_DEFAULT_VALUE 0.0</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define TYPE_STRING_DEFAULT_VALUE std::string(&quot;&quot;)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#af211489c5834599af09eff550fc0acbc">   13</a></span>&#160;<span class="preprocessor">#define TYPE_INT_DEFAULT_VALUE 0</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#af8c020477e9fd4bd379da3e463c617db">   14</a></span>&#160;<span class="preprocessor">#define TYPE_DOUBLE_DEFAULT_VALUE 0.0</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#a847006a9829e4c452ce6593075c7c7e0">   15</a></span>&#160;<span class="preprocessor">#define TYPE_STRING_DEFAULT_VALUE std::string(&quot;&quot;)</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define var std::variant&lt;int, double, std::string&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define ColumnsData std::unordered_map&lt;int, std::pair&lt;std::string, std::string&gt;&gt; // value =&gt; first - column name, second - column type</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#a1b0936415a643c88ce543099c10e0d7f">   17</a></span>&#160;<span class="preprocessor">#define var std::variant&lt;int, double, std::string&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#a90dcc97afa6dd71a56cae3512dc3e295">   18</a></span>&#160;<span class="preprocessor">#define ColumnsData std::unordered_map&lt;int, std::pair&lt;std::string, std::string&gt;&gt; // value =&gt; first - column name, second - column type</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define DELETE_TABLE_VIEW std::string(&quot;delete table view&quot;)</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define EDIT_TABLE_VIEW std::string(&quot;edit table view&quot;)</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define SHOW_TABLE_VIEW std::string(&quot;show table view&quot;)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#a8e85a2614517904ad2a5761f46079ed8">   20</a></span>&#160;<span class="preprocessor">#define DELETE_TABLE_VIEW std::string(&quot;delete table view&quot;)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#a271209e37be028453bc01a98e583539b">   21</a></span>&#160;<span class="preprocessor">#define EDIT_TABLE_VIEW std::string(&quot;edit table view&quot;)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#a2c0386149d2a23974ff047f5521e704e">   22</a></span>&#160;<span class="preprocessor">#define SHOW_TABLE_VIEW std::string(&quot;show table view&quot;)</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define DELETE_TABLE_BUTTON_TEXT std::string(&quot;Usun tabele&quot;)</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define EDIT_TABLE_BUTTON_TEXT std::string(&quot;Edytuj tabele&quot;)</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define SHOW_TABLE_BUTTON_TEXT std::string(&quot;Pokaz tabele&quot;)</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#a88198e26ffee3e6570134e6d54068bab">   24</a></span>&#160;<span class="preprocessor">#define DELETE_TABLE_BUTTON_TEXT std::string(&quot;Usun tabele&quot;)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#a860da6b1dc203ca05e609e5667e9820c">   25</a></span>&#160;<span class="preprocessor">#define EDIT_TABLE_BUTTON_TEXT std::string(&quot;Edytuj tabele&quot;)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_common_dictionary_8h.html#aac2e8fb210e3c87065a75c1d286091e5">   26</a></span>&#160;<span class="preprocessor">#define SHOW_TABLE_BUTTON_TEXT std::string(&quot;Pokaz tabele&quot;)</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif COMMONDICTIONARY</span></div>

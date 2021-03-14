@@ -6,4 +6,3 @@ class AbstractView
 };
 
 #endif
-

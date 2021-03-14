@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.19"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ZCUZ project: MainWindow.h Source File</title>
+<title>ZCUZ project: CustomDatabase/MainWindow.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,59 +60,81 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_73ace43148687c01bb1f112496923b43.html">CustomDatabase</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">MainWindow.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAINWINDOW</span></div>
+<a href="_main_window_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAINWINDOW</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MAINWINDOW</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QMainWindow&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;ui_MainWindow.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Controller/Controller.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;View/AbstractView.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;View/StartingWidget.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;View/ChooseTableWidget.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;View/AddTableWidget.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;View/EditTableWidget.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;View/ShowTableView.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_controller_8h.html">Controller/Controller.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_starting_widget_8h.html">View/StartingWidget.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_choose_table_widget_8h.html">View/ChooseTableWidget.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_add_table_widget_8h.html">View/AddTableWidget.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_edit_table_widget_8h.html">View/EditTableWidget.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_show_table_view_8h.html">View/ShowTableView.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_abstract_view_8h.html">View/AbstractView.h</a>&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_main_window.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow, <span class="keyword">public</span> AbstractView</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_main_window.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow, <span class="keyword">public</span> <a class="code" href="class_abstract_view.html">AbstractView</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_main_window.html#a07f9da8b4156a57614fd22bd1269d8bd">MainWindow</a>(QWidget *parent = Q_NULLPTR);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad5cf09b81db640d0e6f350129e88786a">setController</a>(std::shared_ptr&lt;Controller&gt; controllerPtr);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad5cf09b81db640d0e6f350129e88786a">setController</a>(std::shared_ptr&lt;Controller&gt; <a class="code" href="class_main_window.html#a24577c3e9c39bb4b3e0227a1d1e3740e">controllerPtr</a>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span> slots:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a03d9508f8e2ea18742c0e0247462de37">deleteTableClicked</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ac4657b9fd02f13125f9cbfae5c431284">editRowsClicked</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> showTableClicked();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> addTableClicked();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> createNewTableClicked();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> restoreDefaultView();   </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> tableChosen(<span class="keywordtype">int</span> tableId, std::string viewType);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> setCentralChildWidget(std::string&amp; buttonText, std::string&amp; viewType);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ac4657b9fd02f13125f9cbfae5c431284">editRowsClicked</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a204b1f7b57a53955db63f11ee9ad5e4c">showTableClicked</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a448f29707f6d5214d3754dc3057ca504">addTableClicked</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a3892d5257faef94ec319ec0e9dbcd8b5">restoreDefaultView</a>();   </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ae912b1dfa32a6dbf0ded1d6f245ef188">tableChosen</a>(<span class="keywordtype">int</span> tableId, std::string viewType);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Ui::MainWindowClass ui;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QWidget* centralChild;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::shared_ptr&lt;Controller&gt; controllerPtr;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a27f39c628a55bacbd744f614dc298038">setCentralChildWidget</a>(std::string&amp; buttonText, std::string&amp; viewType);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_main_window.html#a019defdc9b04dc63499a16f849c8ff87">   49</a></span>&#160;    Ui::MainWindowClass <a class="code" href="class_main_window.html#a019defdc9b04dc63499a16f849c8ff87">ui</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_main_window.html#aee463352540d5e0791c845f8f723941d">   51</a></span>&#160;    QWidget* <a class="code" href="class_main_window.html#aee463352540d5e0791c845f8f723941d">centralChild</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_main_window.html#a24577c3e9c39bb4b3e0227a1d1e3740e">   53</a></span>&#160;    std::shared_ptr&lt;Controller&gt; <a class="code" href="class_main_window.html#a24577c3e9c39bb4b3e0227a1d1e3740e">controllerPtr</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_main_window_html_a03d9508f8e2ea18742c0e0247462de37"><div class="ttname"><a href="class_main_window.html#a03d9508f8e2ea18742c0e0247462de37">MainWindow::deleteTableClicked</a></div><div class="ttdeci">void deleteTableClicked()</div><div class="ttdoc">Public slot which is run when delete table button is clicked.</div><div class="ttdef"><b>Definition:</b> MainWindow.cpp:22</div></div>
-<div class="ttc" id="aclass_main_window_html_ac4657b9fd02f13125f9cbfae5c431284"><div class="ttname"><a href="class_main_window.html#ac4657b9fd02f13125f9cbfae5c431284">MainWindow::editRowsClicked</a></div><div class="ttdeci">void editRowsClicked()</div><div class="ttdoc">Public slot which is run when edit rows button is clicked</div><div class="ttdef"><b>Definition:</b> MainWindow.cpp:27</div></div>
-<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">MainWindow class representing main window in application GUI.</div><div class="ttdef"><b>Definition:</b> MainWindow.h:17</div></div>
+<div class="ttc" id="a_add_table_widget_8h_html"><div class="ttname"><a href="_add_table_widget_8h.html">AddTableWidget.h</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a27f39c628a55bacbd744f614dc298038"><div class="ttname"><a href="class_main_window.html#a27f39c628a55bacbd744f614dc298038">MainWindow::setCentralChildWidget</a></div><div class="ttdeci">void setCentralChildWidget(std::string &amp;buttonText, std::string &amp;viewType)</div><div class="ttdoc">Helper function that creates and displays choseTableWdget in proper viewType.</div><div class="ttdef"><b>Definition:</b> MainWindow.cpp:46</div></div>
+<div class="ttc" id="aclass_main_window_html_a24577c3e9c39bb4b3e0227a1d1e3740e"><div class="ttname"><a href="class_main_window.html#a24577c3e9c39bb4b3e0227a1d1e3740e">MainWindow::controllerPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Controller &gt; controllerPtr</div><div class="ttdoc">Pointer to controller.</div><div class="ttdef"><b>Definition:</b> MainWindow.h:53</div></div>
+<div class="ttc" id="a_choose_table_widget_8h_html"><div class="ttname"><a href="_choose_table_widget_8h.html">ChooseTableWidget.h</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a019defdc9b04dc63499a16f849c8ff87"><div class="ttname"><a href="class_main_window.html#a019defdc9b04dc63499a16f849c8ff87">MainWindow::ui</a></div><div class="ttdeci">Ui::MainWindowClass ui</div><div class="ttdoc">Qt user interface variable.</div><div class="ttdef"><b>Definition:</b> MainWindow.h:49</div></div>
+<div class="ttc" id="aclass_main_window_html_ac4657b9fd02f13125f9cbfae5c431284"><div class="ttname"><a href="class_main_window.html#ac4657b9fd02f13125f9cbfae5c431284">MainWindow::editRowsClicked</a></div><div class="ttdeci">void editRowsClicked()</div><div class="ttdoc">Public slot which is run when add/delete rows button is clicked.</div><div class="ttdef"><b>Definition:</b> MainWindow.cpp:27</div></div>
+<div class="ttc" id="aclass_main_window_html_aee463352540d5e0791c845f8f723941d"><div class="ttname"><a href="class_main_window.html#aee463352540d5e0791c845f8f723941d">MainWindow::centralChild</a></div><div class="ttdeci">QWidget * centralChild</div><div class="ttdoc">Pointer to widget displayed in center of main window.</div><div class="ttdef"><b>Definition:</b> MainWindow.h:51</div></div>
+<div class="ttc" id="a_controller_8h_html"><div class="ttname"><a href="_controller_8h.html">Controller.h</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a448f29707f6d5214d3754dc3057ca504"><div class="ttname"><a href="class_main_window.html#a448f29707f6d5214d3754dc3057ca504">MainWindow::addTableClicked</a></div><div class="ttdeci">void addTableClicked()</div><div class="ttdoc">Public slot which is run when add table button is clicked.</div><div class="ttdef"><b>Definition:</b> MainWindow.cpp:59</div></div>
+<div class="ttc" id="aclass_main_window_html_a204b1f7b57a53955db63f11ee9ad5e4c"><div class="ttname"><a href="class_main_window.html#a204b1f7b57a53955db63f11ee9ad5e4c">MainWindow::showTableClicked</a></div><div class="ttdeci">void showTableClicked()</div><div class="ttdoc">Public slot which is run when browse the contents of tables button is clicked.</div><div class="ttdef"><b>Definition:</b> MainWindow.cpp:32</div></div>
+<div class="ttc" id="aclass_abstract_view_html"><div class="ttname"><a href="class_abstract_view.html">AbstractView</a></div><div class="ttdef"><b>Definition:</b> AbstractView.h:5</div></div>
+<div class="ttc" id="aclass_main_window_html_ae912b1dfa32a6dbf0ded1d6f245ef188"><div class="ttname"><a href="class_main_window.html#ae912b1dfa32a6dbf0ded1d6f245ef188">MainWindow::tableChosen</a></div><div class="ttdeci">void tableChosen(int tableId, std::string viewType)</div><div class="ttdoc">Public slot which is run when child widget emits tableChosen signal.</div><div class="ttdef"><b>Definition:</b> MainWindow.cpp:71</div></div>
+<div class="ttc" id="a_starting_widget_8h_html"><div class="ttname"><a href="_starting_widget_8h.html">StartingWidget.h</a></div></div>
+<div class="ttc" id="a_abstract_view_8h_html"><div class="ttname"><a href="_abstract_view_8h.html">AbstractView.h</a></div></div>
+<div class="ttc" id="a_show_table_view_8h_html"><div class="ttname"><a href="_show_table_view_8h.html">ShowTableView.h</a></div></div>
+<div class="ttc" id="a_edit_table_widget_8h_html"><div class="ttname"><a href="_edit_table_widget_8h.html">EditTableWidget.h</a></div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">Main window class representing main window in application GUI.</div><div class="ttdef"><b>Definition:</b> MainWindow.h:17</div></div>
 <div class="ttc" id="aclass_main_window_html_ad5cf09b81db640d0e6f350129e88786a"><div class="ttname"><a href="class_main_window.html#ad5cf09b81db640d0e6f350129e88786a">MainWindow::setController</a></div><div class="ttdeci">void setController(std::shared_ptr&lt; Controller &gt; controllerPtr)</div><div class="ttdoc">Function that sets pointer to Controller class.</div><div class="ttdef"><b>Definition:</b> MainWindow.cpp:17</div></div>
 <div class="ttc" id="aclass_main_window_html_a07f9da8b4156a57614fd22bd1269d8bd"><div class="ttname"><a href="class_main_window.html#a07f9da8b4156a57614fd22bd1269d8bd">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=Q_NULLPTR)</div><div class="ttdoc">Class constructor.</div><div class="ttdef"><b>Definition:</b> MainWindow.cpp:3</div></div>
+<div class="ttc" id="aclass_main_window_html_a3892d5257faef94ec319ec0e9dbcd8b5"><div class="ttname"><a href="class_main_window.html#a3892d5257faef94ec319ec0e9dbcd8b5">MainWindow::restoreDefaultView</a></div><div class="ttdeci">void restoreDefaultView()</div><div class="ttdoc">Public slot which is run when child widget emits restoreDefaultWidget signal.</div><div class="ttdef"><b>Definition:</b> MainWindow.cpp:37</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.19

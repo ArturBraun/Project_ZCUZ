@@ -1,0 +1,180 @@
+\hypertarget{class_table}{}\doxysection{Table Class Reference}
+\label{class_table}\index{Table@{Table}}
+
+
+Class representing particular table.  
+
+
+
+
+{\ttfamily \#include $<$Table.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_table_aba1ddfe7d6e8b06f554771ed2ade60ab}{Table}} (std\+::string \&\mbox{\hyperlink{class_table_acef59d937d1517cc712d8d9144b8f7e7}{table\+Name}}, \mbox{\hyperlink{_common_dictionary_8h_a90dcc97afa6dd71a56cae3512dc3e295}{Columns\+Data}} \&column\+Types\+And\+Names)
+\begin{DoxyCompactList}\small\item\em Class constructor. Requires table name and column data (column types and names) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_table_ad22e99c53850e3e4de5ed040bbc4b5e8}{get\+Table\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter function of table name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_table_a4ff35dffcaf563044db9467a04bcdff9}{get\+Column\+Name}} (int column\+Id)
+\begin{DoxyCompactList}\small\item\em Getter function of name from the column with specified id. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_table_ac24b772c0aa5bf2322fb2190e2726e4d}{get\+Number\+Of\+Columns}} ()
+\begin{DoxyCompactList}\small\item\em Getter function of number of columns in table. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_table_a0845f0562356f3fd08f7bc83c58e894b}{get\+Column\+Type}} (int column\+Id)
+\begin{DoxyCompactList}\small\item\em Getter function of column type from the column with specified id. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_row}{Row}} $>$ \mbox{\hyperlink{class_table_a40b445f38b3508c7db9b1ecdc65e3f6f}{get\+Sorted\+Rows}} (int sort\+Column\+Id=0, bool sort\+Descending=false)
+\begin{DoxyCompactList}\small\item\em Getter function of sorted rows. Rows are sorted by column id. Sorting order by default is ascending. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_afd8acb63c4ceb68bb9855e634a7e9a64}{create\+New\+Row}} ()
+\begin{DoxyCompactList}\small\item\em Function that creates new row with default values of every row field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_ac8a63facdd4cbff865bc8d19624000bc}{delete\+Row}} (int row\+Id)
+\begin{DoxyCompactList}\small\item\em Function that deletes row with specified id. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_table_a845e76db7f52f376f11ea435ba44d916}{update\+Value\+In\+Row}} (int row\+Id, int column\+Id, T \&value)
+\begin{DoxyCompactList}\small\item\em Template function that updates value for concrete column in row with specified id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_table_acef59d937d1517cc712d8d9144b8f7e7}{table\+Name}}
+\begin{DoxyCompactList}\small\item\em Variale that holds table name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_common_dictionary_8h_a90dcc97afa6dd71a56cae3512dc3e295}{Columns\+Data}} \mbox{\hyperlink{class_table_a02691c176f3fb3b63aa70062601557ee}{columns\+Data}}
+\begin{DoxyCompactList}\small\item\em Std structure that hold columns data (types and names) \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_row}{Row}} $>$ \mbox{\hyperlink{class_table_adfeadb381cd80de7e626f1963b02d300}{rows}}
+\begin{DoxyCompactList}\small\item\em Vector that stores rows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing particular table. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_table_aba1ddfe7d6e8b06f554771ed2ade60ab}\label{class_table_aba1ddfe7d6e8b06f554771ed2ade60ab}} 
+\index{Table@{Table}!Table@{Table}}
+\index{Table@{Table}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{Table()}{Table()}}
+{\footnotesize\ttfamily Table\+::\+Table (\begin{DoxyParamCaption}\item[{std\+::string \&}]{table\+Name,  }\item[{\mbox{\hyperlink{_common_dictionary_8h_a90dcc97afa6dd71a56cae3512dc3e295}{Columns\+Data}} \&}]{column\+Types\+And\+Names }\end{DoxyParamCaption})}
+
+
+
+Class constructor. Requires table name and column data (column types and names) 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_table_afd8acb63c4ceb68bb9855e634a7e9a64}\label{class_table_afd8acb63c4ceb68bb9855e634a7e9a64}} 
+\index{Table@{Table}!createNewRow@{createNewRow}}
+\index{createNewRow@{createNewRow}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{createNewRow()}{createNewRow()}}
+{\footnotesize\ttfamily void Table\+::create\+New\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that creates new row with default values of every row field. 
+
+\mbox{\Hypertarget{class_table_ac8a63facdd4cbff865bc8d19624000bc}\label{class_table_ac8a63facdd4cbff865bc8d19624000bc}} 
+\index{Table@{Table}!deleteRow@{deleteRow}}
+\index{deleteRow@{deleteRow}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{deleteRow()}{deleteRow()}}
+{\footnotesize\ttfamily void Table\+::delete\+Row (\begin{DoxyParamCaption}\item[{int}]{row\+Id }\end{DoxyParamCaption})}
+
+
+
+Function that deletes row with specified id. 
+
+\mbox{\Hypertarget{class_table_a4ff35dffcaf563044db9467a04bcdff9}\label{class_table_a4ff35dffcaf563044db9467a04bcdff9}} 
+\index{Table@{Table}!getColumnName@{getColumnName}}
+\index{getColumnName@{getColumnName}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getColumnName()}{getColumnName()}}
+{\footnotesize\ttfamily std\+::string Table\+::get\+Column\+Name (\begin{DoxyParamCaption}\item[{int}]{column\+Id }\end{DoxyParamCaption})}
+
+
+
+Getter function of name from the column with specified id. 
+
+\mbox{\Hypertarget{class_table_a0845f0562356f3fd08f7bc83c58e894b}\label{class_table_a0845f0562356f3fd08f7bc83c58e894b}} 
+\index{Table@{Table}!getColumnType@{getColumnType}}
+\index{getColumnType@{getColumnType}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getColumnType()}{getColumnType()}}
+{\footnotesize\ttfamily std\+::string Table\+::get\+Column\+Type (\begin{DoxyParamCaption}\item[{int}]{column\+Id }\end{DoxyParamCaption})}
+
+
+
+Getter function of column type from the column with specified id. 
+
+\mbox{\Hypertarget{class_table_ac24b772c0aa5bf2322fb2190e2726e4d}\label{class_table_ac24b772c0aa5bf2322fb2190e2726e4d}} 
+\index{Table@{Table}!getNumberOfColumns@{getNumberOfColumns}}
+\index{getNumberOfColumns@{getNumberOfColumns}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getNumberOfColumns()}{getNumberOfColumns()}}
+{\footnotesize\ttfamily int Table\+::get\+Number\+Of\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function of number of columns in table. 
+
+\mbox{\Hypertarget{class_table_a40b445f38b3508c7db9b1ecdc65e3f6f}\label{class_table_a40b445f38b3508c7db9b1ecdc65e3f6f}} 
+\index{Table@{Table}!getSortedRows@{getSortedRows}}
+\index{getSortedRows@{getSortedRows}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getSortedRows()}{getSortedRows()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_row}{Row}} $>$ Table\+::get\+Sorted\+Rows (\begin{DoxyParamCaption}\item[{int}]{sort\+Column\+Id = {\ttfamily 0},  }\item[{bool}]{sort\+Descending = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Getter function of sorted rows. Rows are sorted by column id. Sorting order by default is ascending. 
+
+\mbox{\Hypertarget{class_table_ad22e99c53850e3e4de5ed040bbc4b5e8}\label{class_table_ad22e99c53850e3e4de5ed040bbc4b5e8}} 
+\index{Table@{Table}!getTableName@{getTableName}}
+\index{getTableName@{getTableName}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getTableName()}{getTableName()}}
+{\footnotesize\ttfamily std\+::string Table\+::get\+Table\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function of table name. 
+
+\mbox{\Hypertarget{class_table_a845e76db7f52f376f11ea435ba44d916}\label{class_table_a845e76db7f52f376f11ea435ba44d916}} 
+\index{Table@{Table}!updateValueInRow@{updateValueInRow}}
+\index{updateValueInRow@{updateValueInRow}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{updateValueInRow()}{updateValueInRow()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Table\+::update\+Value\+In\+Row (\begin{DoxyParamCaption}\item[{int}]{row\+Id,  }\item[{int}]{column\+Id,  }\item[{T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Template function that updates value for concrete column in row with specified id. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_table_a02691c176f3fb3b63aa70062601557ee}\label{class_table_a02691c176f3fb3b63aa70062601557ee}} 
+\index{Table@{Table}!columnsData@{columnsData}}
+\index{columnsData@{columnsData}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{columnsData}{columnsData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_common_dictionary_8h_a90dcc97afa6dd71a56cae3512dc3e295}{Columns\+Data}} Table\+::columns\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Std structure that hold columns data (types and names) 
+
+\mbox{\Hypertarget{class_table_adfeadb381cd80de7e626f1963b02d300}\label{class_table_adfeadb381cd80de7e626f1963b02d300}} 
+\index{Table@{Table}!rows@{rows}}
+\index{rows@{rows}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_row}{Row}}$>$ Table\+::rows\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector that stores rows. 
+
+\mbox{\Hypertarget{class_table_acef59d937d1517cc712d8d9144b8f7e7}\label{class_table_acef59d937d1517cc712d8d9144b8f7e7}} 
+\index{Table@{Table}!tableName@{tableName}}
+\index{tableName@{tableName}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{tableName}{tableName}}
+{\footnotesize\ttfamily std\+::string Table\+::table\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variale that holds table name. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Custom\+Database/\+Model/\mbox{\hyperlink{_table_8h}{Table.\+h}}\item 
+Custom\+Database/\+Model/\mbox{\hyperlink{_table_8cpp}{Table.\+cpp}}\end{DoxyCompactItemize}

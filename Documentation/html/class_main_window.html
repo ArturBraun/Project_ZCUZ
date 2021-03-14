@@ -66,13 +66,14 @@ $(function() {
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_main_window-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MainWindow Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_main_window.html" title="MainWindow class representing main window in application GUI.">MainWindow</a> class representing main window in application GUI.  
+<p>Main window class representing main window in application GUI.  
  <a href="class_main_window.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_main_window_8h_source.html">MainWindow.h</a>&gt;</code></p>
@@ -80,54 +81,138 @@ $(function() {
 Inheritance diagram for MainWindow:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_main_window.png" alt=""/>
- </div></div>
+  <img src="class_main_window.png" usemap="#MainWindow_map" alt=""/>
+  <map id="MainWindow_map" name="MainWindow_map">
+<area href="class_abstract_view.html" alt="AbstractView" shape="rect" coords="104,0,198,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a03d9508f8e2ea18742c0e0247462de37"><td class="memItemLeft" align="right" valign="top"><a id="a03d9508f8e2ea18742c0e0247462de37"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a03d9508f8e2ea18742c0e0247462de37">deleteTableClicked</a> ()</td></tr>
-<tr class="memdesc:a03d9508f8e2ea18742c0e0247462de37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public slot which is run when delete table button is clicked. <br /></td></tr>
+<tr class="memitem:a03d9508f8e2ea18742c0e0247462de37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a03d9508f8e2ea18742c0e0247462de37">deleteTableClicked</a> ()</td></tr>
+<tr class="memdesc:a03d9508f8e2ea18742c0e0247462de37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public slot which is run when delete table button is clicked.  <a href="class_main_window.html#a03d9508f8e2ea18742c0e0247462de37">More...</a><br /></td></tr>
 <tr class="separator:a03d9508f8e2ea18742c0e0247462de37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4657b9fd02f13125f9cbfae5c431284"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ac4657b9fd02f13125f9cbfae5c431284">editRowsClicked</a> ()</td></tr>
-<tr class="memdesc:ac4657b9fd02f13125f9cbfae5c431284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public slot which is run when edit rows button is clicked  <a href="class_main_window.html#ac4657b9fd02f13125f9cbfae5c431284">More...</a><br /></td></tr>
+<tr class="memdesc:ac4657b9fd02f13125f9cbfae5c431284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public slot which is run when add/delete rows button is clicked.  <a href="class_main_window.html#ac4657b9fd02f13125f9cbfae5c431284">More...</a><br /></td></tr>
 <tr class="separator:ac4657b9fd02f13125f9cbfae5c431284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a204b1f7b57a53955db63f11ee9ad5e4c"><td class="memItemLeft" align="right" valign="top"><a id="a204b1f7b57a53955db63f11ee9ad5e4c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showTableClicked</b> ()</td></tr>
+<tr class="memitem:a204b1f7b57a53955db63f11ee9ad5e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a204b1f7b57a53955db63f11ee9ad5e4c">showTableClicked</a> ()</td></tr>
+<tr class="memdesc:a204b1f7b57a53955db63f11ee9ad5e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public slot which is run when browse the contents of tables button is clicked.  <a href="class_main_window.html#a204b1f7b57a53955db63f11ee9ad5e4c">More...</a><br /></td></tr>
 <tr class="separator:a204b1f7b57a53955db63f11ee9ad5e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448f29707f6d5214d3754dc3057ca504"><td class="memItemLeft" align="right" valign="top"><a id="a448f29707f6d5214d3754dc3057ca504"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addTableClicked</b> ()</td></tr>
+<tr class="memitem:a448f29707f6d5214d3754dc3057ca504"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a448f29707f6d5214d3754dc3057ca504">addTableClicked</a> ()</td></tr>
+<tr class="memdesc:a448f29707f6d5214d3754dc3057ca504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public slot which is run when add table button is clicked.  <a href="class_main_window.html#a448f29707f6d5214d3754dc3057ca504">More...</a><br /></td></tr>
 <tr class="separator:a448f29707f6d5214d3754dc3057ca504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06a941ba2d7a0ed1bf2b2a589e4e9e1b"><td class="memItemLeft" align="right" valign="top"><a id="a06a941ba2d7a0ed1bf2b2a589e4e9e1b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createNewTableClicked</b> ()</td></tr>
-<tr class="separator:a06a941ba2d7a0ed1bf2b2a589e4e9e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3892d5257faef94ec319ec0e9dbcd8b5"><td class="memItemLeft" align="right" valign="top"><a id="a3892d5257faef94ec319ec0e9dbcd8b5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>restoreDefaultView</b> ()</td></tr>
+<tr class="memitem:a3892d5257faef94ec319ec0e9dbcd8b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a3892d5257faef94ec319ec0e9dbcd8b5">restoreDefaultView</a> ()</td></tr>
+<tr class="memdesc:a3892d5257faef94ec319ec0e9dbcd8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public slot which is run when child widget emits restoreDefaultWidget signal.  <a href="class_main_window.html#a3892d5257faef94ec319ec0e9dbcd8b5">More...</a><br /></td></tr>
 <tr class="separator:a3892d5257faef94ec319ec0e9dbcd8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae912b1dfa32a6dbf0ded1d6f245ef188"><td class="memItemLeft" align="right" valign="top"><a id="ae912b1dfa32a6dbf0ded1d6f245ef188"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>tableChosen</b> (int tableId, std::string viewType)</td></tr>
+<tr class="memitem:ae912b1dfa32a6dbf0ded1d6f245ef188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ae912b1dfa32a6dbf0ded1d6f245ef188">tableChosen</a> (int tableId, std::string viewType)</td></tr>
+<tr class="memdesc:ae912b1dfa32a6dbf0ded1d6f245ef188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public slot which is run when child widget emits tableChosen signal.  <a href="class_main_window.html#ae912b1dfa32a6dbf0ded1d6f245ef188">More...</a><br /></td></tr>
 <tr class="separator:ae912b1dfa32a6dbf0ded1d6f245ef188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a07f9da8b4156a57614fd22bd1269d8bd"><td class="memItemLeft" align="right" valign="top"><a id="a07f9da8b4156a57614fd22bd1269d8bd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a07f9da8b4156a57614fd22bd1269d8bd">MainWindow</a> (QWidget *parent=Q_NULLPTR)</td></tr>
-<tr class="memdesc:a07f9da8b4156a57614fd22bd1269d8bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor. <br /></td></tr>
+<tr class="memitem:a07f9da8b4156a57614fd22bd1269d8bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a07f9da8b4156a57614fd22bd1269d8bd">MainWindow</a> (QWidget *parent=Q_NULLPTR)</td></tr>
+<tr class="memdesc:a07f9da8b4156a57614fd22bd1269d8bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="class_main_window.html#a07f9da8b4156a57614fd22bd1269d8bd">More...</a><br /></td></tr>
 <tr class="separator:a07f9da8b4156a57614fd22bd1269d8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5cf09b81db640d0e6f350129e88786a"><td class="memItemLeft" align="right" valign="top"><a id="ad5cf09b81db640d0e6f350129e88786a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ad5cf09b81db640d0e6f350129e88786a">setController</a> (std::shared_ptr&lt; Controller &gt; controllerPtr)</td></tr>
-<tr class="memdesc:ad5cf09b81db640d0e6f350129e88786a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that sets pointer to Controller class. <br /></td></tr>
+<tr class="memitem:ad5cf09b81db640d0e6f350129e88786a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ad5cf09b81db640d0e6f350129e88786a">setController</a> (std::shared_ptr&lt; <a class="el" href="class_controller.html">Controller</a> &gt; <a class="el" href="class_main_window.html#a24577c3e9c39bb4b3e0227a1d1e3740e">controllerPtr</a>)</td></tr>
+<tr class="memdesc:ad5cf09b81db640d0e6f350129e88786a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that sets pointer to <a class="el" href="class_controller.html">Controller</a> class.  <a href="class_main_window.html#ad5cf09b81db640d0e6f350129e88786a">More...</a><br /></td></tr>
 <tr class="separator:ad5cf09b81db640d0e6f350129e88786a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a27f39c628a55bacbd744f614dc298038"><td class="memItemLeft" align="right" valign="top"><a id="a27f39c628a55bacbd744f614dc298038"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCentralChildWidget</b> (std::string &amp;buttonText, std::string &amp;viewType)</td></tr>
+<tr class="memitem:a27f39c628a55bacbd744f614dc298038"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a27f39c628a55bacbd744f614dc298038">setCentralChildWidget</a> (std::string &amp;buttonText, std::string &amp;viewType)</td></tr>
+<tr class="memdesc:a27f39c628a55bacbd744f614dc298038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function that creates and displays choseTableWdget in proper viewType.  <a href="class_main_window.html#a27f39c628a55bacbd744f614dc298038">More...</a><br /></td></tr>
 <tr class="separator:a27f39c628a55bacbd744f614dc298038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a019defdc9b04dc63499a16f849c8ff87"><td class="memItemLeft" align="right" valign="top">Ui::MainWindowClass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a019defdc9b04dc63499a16f849c8ff87">ui</a></td></tr>
+<tr class="memdesc:a019defdc9b04dc63499a16f849c8ff87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Qt user interface variable.  <a href="class_main_window.html#a019defdc9b04dc63499a16f849c8ff87">More...</a><br /></td></tr>
+<tr class="separator:a019defdc9b04dc63499a16f849c8ff87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee463352540d5e0791c845f8f723941d"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aee463352540d5e0791c845f8f723941d">centralChild</a></td></tr>
+<tr class="memdesc:aee463352540d5e0791c845f8f723941d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to widget displayed in center of main window.  <a href="class_main_window.html#aee463352540d5e0791c845f8f723941d">More...</a><br /></td></tr>
+<tr class="separator:aee463352540d5e0791c845f8f723941d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24577c3e9c39bb4b3e0227a1d1e3740e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_controller.html">Controller</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a24577c3e9c39bb4b3e0227a1d1e3740e">controllerPtr</a></td></tr>
+<tr class="memdesc:a24577c3e9c39bb4b3e0227a1d1e3740e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to controller.  <a href="class_main_window.html#a24577c3e9c39bb4b3e0227a1d1e3740e">More...</a><br /></td></tr>
+<tr class="separator:a24577c3e9c39bb4b3e0227a1d1e3740e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_main_window.html" title="MainWindow class representing main window in application GUI.">MainWindow</a> class representing main window in application GUI. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Main window class representing main window in application GUI. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a07f9da8b4156a57614fd22bd1269d8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f9da8b4156a57614fd22bd1269d8bd">&#9670;&nbsp;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>Q_NULLPTR</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Class constructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a448f29707f6d5214d3754dc3057ca504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448f29707f6d5214d3754dc3057ca504">&#9670;&nbsp;</a></span>addTableClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::addTableClicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Public slot which is run when add table button is clicked. </p>
+
+</div>
+</div>
+<a id="a03d9508f8e2ea18742c0e0247462de37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03d9508f8e2ea18742c0e0247462de37">&#9670;&nbsp;</a></span>deleteTableClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::deleteTableClicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Public slot which is run when delete table button is clicked. </p>
+
+</div>
+</div>
 <a id="ac4657b9fd02f13125f9cbfae5c431284"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4657b9fd02f13125f9cbfae5c431284">&#9670;&nbsp;</a></span>editRowsClicked</h2>
 
@@ -151,13 +236,238 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCentralChildWidget
 </table>
 </div><div class="memdoc">
 
-<p>Public slot which is run when edit rows button is clicked </p>
+<p>Public slot which is run when add/delete rows button is clicked. </p>
+
+</div>
+</div>
+<a id="a3892d5257faef94ec319ec0e9dbcd8b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3892d5257faef94ec319ec0e9dbcd8b5">&#9670;&nbsp;</a></span>restoreDefaultView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::restoreDefaultView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Public slot which is run when child widget emits restoreDefaultWidget signal. </p>
+<p>This function restores default view of main window </p>
+
+</div>
+</div>
+<a id="a27f39c628a55bacbd744f614dc298038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27f39c628a55bacbd744f614dc298038">&#9670;&nbsp;</a></span>setCentralChildWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::setCentralChildWidget </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>buttonText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>viewType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper function that creates and displays choseTableWdget in proper viewType. </p>
+
+</div>
+</div>
+<a id="ad5cf09b81db640d0e6f350129e88786a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5cf09b81db640d0e6f350129e88786a">&#9670;&nbsp;</a></span>setController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::setController </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_controller.html">Controller</a> &gt;&#160;</td>
+          <td class="paramname"><em>controllerPtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that sets pointer to <a class="el" href="class_controller.html">Controller</a> class. </p>
+
+</div>
+</div>
+<a id="a204b1f7b57a53955db63f11ee9ad5e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204b1f7b57a53955db63f11ee9ad5e4c">&#9670;&nbsp;</a></span>showTableClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::showTableClicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Public slot which is run when browse the contents of tables button is clicked. </p>
+
+</div>
+</div>
+<a id="ae912b1dfa32a6dbf0ded1d6f245ef188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae912b1dfa32a6dbf0ded1d6f245ef188">&#9670;&nbsp;</a></span>tableChosen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::tableChosen </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tableId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>viewType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Public slot which is run when child widget emits tableChosen signal. </p>
+<p>This function performs appropriate action depending on the situation in which chooseTableWidget selected the table </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aee463352540d5e0791c845f8f723941d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee463352540d5e0791c845f8f723941d">&#9670;&nbsp;</a></span>centralChild</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget* MainWindow::centralChild</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to widget displayed in center of main window. </p>
+
+</div>
+</div>
+<a id="a24577c3e9c39bb4b3e0227a1d1e3740e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24577c3e9c39bb4b3e0227a1d1e3740e">&#9670;&nbsp;</a></span>controllerPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_controller.html">Controller</a>&gt; MainWindow::controllerPtr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to controller. </p>
+
+</div>
+</div>
+<a id="a019defdc9b04dc63499a16f849c8ff87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a019defdc9b04dc63499a16f849c8ff87">&#9670;&nbsp;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::MainWindowClass MainWindow::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Qt user interface variable. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_main_window_8h_source.html">MainWindow.h</a></li>
-<li>MainWindow.cpp</li>
+<li>CustomDatabase/<a class="el" href="_main_window_8h_source.html">MainWindow.h</a></li>
+<li>CustomDatabase/<a class="el" href="_main_window_8cpp.html">MainWindow.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

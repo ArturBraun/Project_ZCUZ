@@ -1,0 +1,83 @@
+\hypertarget{class_model}{}\doxysection{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_model_a08e47db21702e79490f8a4aa5d6409e7}{get\+Tables\+Names}} ()
+\item 
+void \mbox{\hyperlink{class_model_a3cc9d19731c055088016acf49b2aece7}{create\+New\+Table}} (std\+::string \&table\+Name, \mbox{\hyperlink{_common_dictionary_8h_a90dcc97afa6dd71a56cae3512dc3e295}{Columns\+Data}} \&column\+Types\+And\+Names)
+\item 
+void \mbox{\hyperlink{class_model_a0b688d0946752f3d88f03721e9835a0d}{delete\+Table}} (int table\+Id)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyperlink{class_model_a7a06028da9e1b0c8697082a9fd74dfd0}{get\+Table\+Ptr}} (int table\+Id)
+\item 
+bool \mbox{\hyperlink{class_model_a38a9fbb9153cd2f631ab501b791136ca}{is\+Table\+Name\+Used}} (std\+::string \&table\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ $>$ \mbox{\hyperlink{class_model_a8da2d715bf6380e3d96f79cfe4a6b3cb}{tables}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}\label{class_model_ae3b375de5f6df4faf74a95d64748e048}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_a3cc9d19731c055088016acf49b2aece7}\label{class_model_a3cc9d19731c055088016acf49b2aece7}} 
+\index{Model@{Model}!createNewTable@{createNewTable}}
+\index{createNewTable@{createNewTable}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createNewTable()}{createNewTable()}}
+{\footnotesize\ttfamily void Model\+::create\+New\+Table (\begin{DoxyParamCaption}\item[{std\+::string \&}]{table\+Name,  }\item[{\mbox{\hyperlink{_common_dictionary_8h_a90dcc97afa6dd71a56cae3512dc3e295}{Columns\+Data}} \&}]{column\+Types\+And\+Names }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_a0b688d0946752f3d88f03721e9835a0d}\label{class_model_a0b688d0946752f3d88f03721e9835a0d}} 
+\index{Model@{Model}!deleteTable@{deleteTable}}
+\index{deleteTable@{deleteTable}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{deleteTable()}{deleteTable()}}
+{\footnotesize\ttfamily void Model\+::delete\+Table (\begin{DoxyParamCaption}\item[{int}]{table\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_a7a06028da9e1b0c8697082a9fd74dfd0}\label{class_model_a7a06028da9e1b0c8697082a9fd74dfd0}} 
+\index{Model@{Model}!getTablePtr@{getTablePtr}}
+\index{getTablePtr@{getTablePtr}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getTablePtr()}{getTablePtr()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ Model\+::get\+Table\+Ptr (\begin{DoxyParamCaption}\item[{int}]{table\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_a08e47db21702e79490f8a4aa5d6409e7}\label{class_model_a08e47db21702e79490f8a4aa5d6409e7}} 
+\index{Model@{Model}!getTablesNames@{getTablesNames}}
+\index{getTablesNames@{getTablesNames}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getTablesNames()}{getTablesNames()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Model\+::get\+Tables\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_a38a9fbb9153cd2f631ab501b791136ca}\label{class_model_a38a9fbb9153cd2f631ab501b791136ca}} 
+\index{Model@{Model}!isTableNameUsed@{isTableNameUsed}}
+\index{isTableNameUsed@{isTableNameUsed}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{isTableNameUsed()}{isTableNameUsed()}}
+{\footnotesize\ttfamily bool Model\+::is\+Table\+Name\+Used (\begin{DoxyParamCaption}\item[{std\+::string \&}]{table\+Name }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_model_a8da2d715bf6380e3d96f79cfe4a6b3cb}\label{class_model_a8da2d715bf6380e3d96f79cfe4a6b3cb}} 
+\index{Model@{Model}!tables@{tables}}
+\index{tables@{tables}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{tables}{tables}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_table}{Table}}$>$ $>$ Model\+::tables\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Custom\+Database/\+Model/\mbox{\hyperlink{_model_8h}{Model.\+h}}\item 
+Custom\+Database/\+Model/\mbox{\hyperlink{_model_8cpp}{Model.\+cpp}}\end{DoxyCompactItemize}

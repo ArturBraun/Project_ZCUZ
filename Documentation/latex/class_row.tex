@@ -1,0 +1,77 @@
+\hypertarget{class_row}{}\doxysection{Row Class Reference}
+\label{class_row}\index{Row@{Row}}
+
+
+{\ttfamily \#include $<$Row.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_row_a5cca50abc389396e26ec68cbd3fb6596}{Row}} ()
+\item 
+\mbox{\hyperlink{class_row}{Row}} \& \mbox{\hyperlink{class_row_afff30d6e5d00df42f50e7665c0a9d331}{operator=}} (const \mbox{\hyperlink{class_row}{Row}} \&right\+Row)
+\item 
+\mbox{\hyperlink{class_row_aa094f536c7ec7aa5ea9ac6e7a3cbdef6}{Row}} (const \mbox{\hyperlink{class_row}{Row}} \&right\+Row)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_row_a80c7a9dfe6c4de424caa32960ec788ff}{set\+Value\+For\+Column}} (int column\+Id, T value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{class_row_ae3333bbe8b6d18d286cee65ec21a5d51}{get\+Value\+For\+Column}} (int column\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ int, \mbox{\hyperlink{_common_dictionary_8h_a1b0936415a643c88ce543099c10e0d7f}{var}} $>$ \mbox{\hyperlink{class_row_ab5a82b8aee6cf3d7c9cc7aecf8bc9aad}{row\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_row_a5cca50abc389396e26ec68cbd3fb6596}\label{class_row_a5cca50abc389396e26ec68cbd3fb6596}} 
+\index{Row@{Row}!Row@{Row}}
+\index{Row@{Row}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{Row()}{Row()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Row\+::\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_row_aa094f536c7ec7aa5ea9ac6e7a3cbdef6}\label{class_row_aa094f536c7ec7aa5ea9ac6e7a3cbdef6}} 
+\index{Row@{Row}!Row@{Row}}
+\index{Row@{Row}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{Row()}{Row()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Row\+::\+Row (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_row}{Row}} \&}]{right\+Row }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_row_ae3333bbe8b6d18d286cee65ec21a5d51}\label{class_row_ae3333bbe8b6d18d286cee65ec21a5d51}} 
+\index{Row@{Row}!getValueForColumn@{getValueForColumn}}
+\index{getValueForColumn@{getValueForColumn}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{getValueForColumn()}{getValueForColumn()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Row\+::get\+Value\+For\+Column (\begin{DoxyParamCaption}\item[{int}]{column\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_row_afff30d6e5d00df42f50e7665c0a9d331}\label{class_row_afff30d6e5d00df42f50e7665c0a9d331}} 
+\index{Row@{Row}!operator=@{operator=}}
+\index{operator=@{operator=}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_row}{Row}} \& Row\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_row}{Row}} \&}]{right\+Row }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_row_a80c7a9dfe6c4de424caa32960ec788ff}\label{class_row_a80c7a9dfe6c4de424caa32960ec788ff}} 
+\index{Row@{Row}!setValueForColumn@{setValueForColumn}}
+\index{setValueForColumn@{setValueForColumn}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{setValueForColumn()}{setValueForColumn()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Row\+::set\+Value\+For\+Column (\begin{DoxyParamCaption}\item[{int}]{column\+Id,  }\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_row_ab5a82b8aee6cf3d7c9cc7aecf8bc9aad}\label{class_row_ab5a82b8aee6cf3d7c9cc7aecf8bc9aad}} 
+\index{Row@{Row}!rowData@{rowData}}
+\index{rowData@{rowData}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{rowData}{rowData}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$int, \mbox{\hyperlink{_common_dictionary_8h_a1b0936415a643c88ce543099c10e0d7f}{var}}$>$ Row\+::row\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Custom\+Database/\+Model/\mbox{\hyperlink{_row_8h}{Row.\+h}}\item 
+Custom\+Database/\+Model/\mbox{\hyperlink{_row_8cpp}{Row.\+cpp}}\end{DoxyCompactItemize}

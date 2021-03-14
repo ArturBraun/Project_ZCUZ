@@ -2,7 +2,7 @@
 \label{class_main_window}\index{MainWindow@{MainWindow}}
 
 
-\mbox{\hyperlink{class_main_window}{Main\+Window}} class representing main window in application G\+UI.  
+Main window class representing main window in application G\+UI.  
 
 
 
@@ -18,47 +18,78 @@ Inheritance diagram for Main\+Window\+:\begin{figure}[H]
 \doxysubsection*{Public Slots}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_main_window_a03d9508f8e2ea18742c0e0247462de37}\label{class_main_window_a03d9508f8e2ea18742c0e0247462de37}} 
 void \mbox{\hyperlink{class_main_window_a03d9508f8e2ea18742c0e0247462de37}{delete\+Table\+Clicked}} ()
 \begin{DoxyCompactList}\small\item\em Public slot which is run when delete table button is clicked. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_main_window_ac4657b9fd02f13125f9cbfae5c431284}{edit\+Rows\+Clicked}} ()
-\begin{DoxyCompactList}\small\item\em Public slot which is run when edit rows button is clicked \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_main_window_a204b1f7b57a53955db63f11ee9ad5e4c}\label{class_main_window_a204b1f7b57a53955db63f11ee9ad5e4c}} 
-void {\bfseries show\+Table\+Clicked} ()
-\item 
-\mbox{\Hypertarget{class_main_window_a448f29707f6d5214d3754dc3057ca504}\label{class_main_window_a448f29707f6d5214d3754dc3057ca504}} 
-void {\bfseries add\+Table\+Clicked} ()
-\item 
-\mbox{\Hypertarget{class_main_window_a06a941ba2d7a0ed1bf2b2a589e4e9e1b}\label{class_main_window_a06a941ba2d7a0ed1bf2b2a589e4e9e1b}} 
-void {\bfseries create\+New\+Table\+Clicked} ()
-\item 
-\mbox{\Hypertarget{class_main_window_a3892d5257faef94ec319ec0e9dbcd8b5}\label{class_main_window_a3892d5257faef94ec319ec0e9dbcd8b5}} 
-void {\bfseries restore\+Default\+View} ()
-\item 
-\mbox{\Hypertarget{class_main_window_ae912b1dfa32a6dbf0ded1d6f245ef188}\label{class_main_window_ae912b1dfa32a6dbf0ded1d6f245ef188}} 
-void {\bfseries table\+Chosen} (int table\+Id, std\+::string view\+Type)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Public slot which is run when add/delete rows button is clicked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a204b1f7b57a53955db63f11ee9ad5e4c}{show\+Table\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Public slot which is run when browse the contents of tables button is clicked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a448f29707f6d5214d3754dc3057ca504}{add\+Table\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Public slot which is run when add table button is clicked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a3892d5257faef94ec319ec0e9dbcd8b5}{restore\+Default\+View}} ()
+\begin{DoxyCompactList}\small\item\em Public slot which is run when child widget emits restore\+Default\+Widget signal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ae912b1dfa32a6dbf0ded1d6f245ef188}{table\+Chosen}} (int table\+Id, std\+::string view\+Type)
+\begin{DoxyCompactList}\small\item\em Public slot which is run when child widget emits table\+Chosen signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_main_window_a07f9da8b4156a57614fd22bd1269d8bd}\label{class_main_window_a07f9da8b4156a57614fd22bd1269d8bd}} 
 \mbox{\hyperlink{class_main_window_a07f9da8b4156a57614fd22bd1269d8bd}{Main\+Window}} (Q\+Widget $\ast$parent=Q\+\_\+\+N\+U\+L\+L\+P\+TR)
 \begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_main_window_ad5cf09b81db640d0e6f350129e88786a}\label{class_main_window_ad5cf09b81db640d0e6f350129e88786a}} 
-void \mbox{\hyperlink{class_main_window_ad5cf09b81db640d0e6f350129e88786a}{set\+Controller}} (std\+::shared\+\_\+ptr$<$ Controller $>$ controller\+Ptr)
-\begin{DoxyCompactList}\small\item\em Function that sets pointer to Controller class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_main_window_ad5cf09b81db640d0e6f350129e88786a}{set\+Controller}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$ \mbox{\hyperlink{class_main_window_a24577c3e9c39bb4b3e0227a1d1e3740e}{controller\+Ptr}})
+\begin{DoxyCompactList}\small\item\em Function that sets pointer to \mbox{\hyperlink{class_controller}{Controller}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_main_window_a27f39c628a55bacbd744f614dc298038}\label{class_main_window_a27f39c628a55bacbd744f614dc298038}} 
-void {\bfseries set\+Central\+Child\+Widget} (std\+::string \&button\+Text, std\+::string \&view\+Type)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_main_window_a27f39c628a55bacbd744f614dc298038}{set\+Central\+Child\+Widget}} (std\+::string \&button\+Text, std\+::string \&view\+Type)
+\begin{DoxyCompactList}\small\item\em Helper function that creates and displays chose\+Table\+Wdget in proper view\+Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Main\+Window\+Class \mbox{\hyperlink{class_main_window_a019defdc9b04dc63499a16f849c8ff87}{ui}}
+\begin{DoxyCompactList}\small\item\em Qt user interface variable. \end{DoxyCompactList}\item 
+Q\+Widget $\ast$ \mbox{\hyperlink{class_main_window_aee463352540d5e0791c845f8f723941d}{central\+Child}}
+\begin{DoxyCompactList}\small\item\em Pointer to widget displayed in center of main window. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$ \mbox{\hyperlink{class_main_window_a24577c3e9c39bb4b3e0227a1d1e3740e}{controller\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Pointer to controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\mbox{\hyperlink{class_main_window}{Main\+Window}} class representing main window in application G\+UI. 
+Main window class representing main window in application G\+UI. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a07f9da8b4156a57614fd22bd1269d8bd}\label{class_main_window_a07f9da8b4156a57614fd22bd1269d8bd}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily Q\+\_\+NULLPTR} }\end{DoxyParamCaption})}
+
+
+
+Class constructor. 
+
+
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a448f29707f6d5214d3754dc3057ca504}\label{class_main_window_a448f29707f6d5214d3754dc3057ca504}} 
+\index{MainWindow@{MainWindow}!addTableClicked@{addTableClicked}}
+\index{addTableClicked@{addTableClicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{addTableClicked}{addTableClicked}}
+{\footnotesize\ttfamily void Main\+Window\+::add\+Table\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Public slot which is run when add table button is clicked. 
+
+\mbox{\Hypertarget{class_main_window_a03d9508f8e2ea18742c0e0247462de37}\label{class_main_window_a03d9508f8e2ea18742c0e0247462de37}} 
+\index{MainWindow@{MainWindow}!deleteTableClicked@{deleteTableClicked}}
+\index{deleteTableClicked@{deleteTableClicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{deleteTableClicked}{deleteTableClicked}}
+{\footnotesize\ttfamily void Main\+Window\+::delete\+Table\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Public slot which is run when delete table button is clicked. 
+
 \mbox{\Hypertarget{class_main_window_ac4657b9fd02f13125f9cbfae5c431284}\label{class_main_window_ac4657b9fd02f13125f9cbfae5c431284}} 
 \index{MainWindow@{MainWindow}!editRowsClicked@{editRowsClicked}}
 \index{editRowsClicked@{editRowsClicked}!MainWindow@{MainWindow}}
@@ -67,11 +98,94 @@ void {\bfseries set\+Central\+Child\+Widget} (std\+::string \&button\+Text, std\
 
 
 
-Public slot which is run when edit rows button is clicked 
+Public slot which is run when add/delete rows button is clicked. 
+
+\mbox{\Hypertarget{class_main_window_a3892d5257faef94ec319ec0e9dbcd8b5}\label{class_main_window_a3892d5257faef94ec319ec0e9dbcd8b5}} 
+\index{MainWindow@{MainWindow}!restoreDefaultView@{restoreDefaultView}}
+\index{restoreDefaultView@{restoreDefaultView}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{restoreDefaultView}{restoreDefaultView}}
+{\footnotesize\ttfamily void Main\+Window\+::restore\+Default\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Public slot which is run when child widget emits restore\+Default\+Widget signal. 
+
+This function restores default view of main window \mbox{\Hypertarget{class_main_window_a27f39c628a55bacbd744f614dc298038}\label{class_main_window_a27f39c628a55bacbd744f614dc298038}} 
+\index{MainWindow@{MainWindow}!setCentralChildWidget@{setCentralChildWidget}}
+\index{setCentralChildWidget@{setCentralChildWidget}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setCentralChildWidget()}{setCentralChildWidget()}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Central\+Child\+Widget (\begin{DoxyParamCaption}\item[{std\+::string \&}]{button\+Text,  }\item[{std\+::string \&}]{view\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Helper function that creates and displays chose\+Table\+Wdget in proper view\+Type. 
+
+\mbox{\Hypertarget{class_main_window_ad5cf09b81db640d0e6f350129e88786a}\label{class_main_window_ad5cf09b81db640d0e6f350129e88786a}} 
+\index{MainWindow@{MainWindow}!setController@{setController}}
+\index{setController@{setController}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setController()}{setController()}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Controller (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$}]{controller\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Function that sets pointer to \mbox{\hyperlink{class_controller}{Controller}} class. 
+
+\mbox{\Hypertarget{class_main_window_a204b1f7b57a53955db63f11ee9ad5e4c}\label{class_main_window_a204b1f7b57a53955db63f11ee9ad5e4c}} 
+\index{MainWindow@{MainWindow}!showTableClicked@{showTableClicked}}
+\index{showTableClicked@{showTableClicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showTableClicked}{showTableClicked}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Table\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Public slot which is run when browse the contents of tables button is clicked. 
+
+\mbox{\Hypertarget{class_main_window_ae912b1dfa32a6dbf0ded1d6f245ef188}\label{class_main_window_ae912b1dfa32a6dbf0ded1d6f245ef188}} 
+\index{MainWindow@{MainWindow}!tableChosen@{tableChosen}}
+\index{tableChosen@{tableChosen}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tableChosen}{tableChosen}}
+{\footnotesize\ttfamily void Main\+Window\+::table\+Chosen (\begin{DoxyParamCaption}\item[{int}]{table\+Id,  }\item[{std\+::string}]{view\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Public slot which is run when child widget emits table\+Chosen signal. 
+
+This function performs appropriate action depending on the situation in which choose\+Table\+Widget selected the table 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_main_window_aee463352540d5e0791c845f8f723941d}\label{class_main_window_aee463352540d5e0791c845f8f723941d}} 
+\index{MainWindow@{MainWindow}!centralChild@{centralChild}}
+\index{centralChild@{centralChild}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{centralChild}{centralChild}}
+{\footnotesize\ttfamily Q\+Widget$\ast$ Main\+Window\+::central\+Child\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to widget displayed in center of main window. 
+
+\mbox{\Hypertarget{class_main_window_a24577c3e9c39bb4b3e0227a1d1e3740e}\label{class_main_window_a24577c3e9c39bb4b3e0227a1d1e3740e}} 
+\index{MainWindow@{MainWindow}!controllerPtr@{controllerPtr}}
+\index{controllerPtr@{controllerPtr}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{controllerPtr}{controllerPtr}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_controller}{Controller}}$>$ Main\+Window\+::controller\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to controller. 
+
+\mbox{\Hypertarget{class_main_window_a019defdc9b04dc63499a16f849c8ff87}\label{class_main_window_a019defdc9b04dc63499a16f849c8ff87}} 
+\index{MainWindow@{MainWindow}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Main\+Window\+Class Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Qt user interface variable. 
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Main\+Window.\+h\item 
-Main\+Window.\+cpp\end{DoxyCompactItemize}
+Custom\+Database/\mbox{\hyperlink{_main_window_8h}{Main\+Window.\+h}}\item 
+Custom\+Database/\mbox{\hyperlink{_main_window_8cpp}{Main\+Window.\+cpp}}\end{DoxyCompactItemize}
