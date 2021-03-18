@@ -91,10 +91,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Model\Model.cpp" />
-    <ClCompile Include="Model\Row.cpp" />
-    <ClCompile Include="Model\Table.cpp" />
-    <ClCompile Include="View\AbstractView.cpp" />
+    <ClCompile Include="Controller\Row.cpp" />
+    <ClCompile Include="Controller\Table.cpp" />
     <ClCompile Include="View\AddTableWidget.cpp" />
     <ClCompile Include="View\ChooseTableWidget.cpp" />
     <ClCompile Include="View\EditTableWidget.cpp" />
@@ -115,10 +113,8 @@
   <ItemGroup>
     <ClInclude Include="CommonDictionary.h" />
     <ClInclude Include="Controller\Controller.h" />
-    <ClInclude Include="Model\Model.h" />
-    <ClInclude Include="Model\Row.h" />
-    <ClInclude Include="Model\Table.h" />
-    <ClInclude Include="View\AbstractView.h" />
+    <ClInclude Include="Controller\Row.h" />
+    <ClInclude Include="Controller\Table.h" />
     <QtMoc Include="View\StartingWidget.h" />
     <QtMoc Include="View\ShowTableView.h" />
     <QtMoc Include="View\EditTableWidget.h" />

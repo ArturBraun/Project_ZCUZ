@@ -1,5 +1,5 @@
-#ifndef EDITTABLEWIDGET
-#define EDITTABLEWIDGET
+#ifndef EDITTABLEWIDGET_H
+#define EDITTABLEWIDGET_H
 
 
 #include <QWidget>
@@ -8,7 +8,7 @@
 #include <qmessagebox.h>
 #include <vector>
 #include <string>
-#include "../Model/Row.h"
+#include "../Controller/Row.h"
 
 class EditTableWidget : public QWidget
 {
@@ -33,4 +33,4 @@ private:
 	std::shared_ptr<Table> currentTable;
 };
 
-#endif EDITTABLEWIDGET
+#endif EDITTABLEWIDGET_H

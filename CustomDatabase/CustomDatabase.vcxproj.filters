@@ -44,15 +44,6 @@
     <ClCompile Include="Controller\Controller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Model\Model.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Model\Row.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Model\Table.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="View\AddTableWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -68,7 +59,10 @@
     <ClCompile Include="View\StartingWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="View\AbstractView.cpp">
+    <ClCompile Include="Controller\Row.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\Table.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -76,19 +70,13 @@
     <ClInclude Include="Controller\Controller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Model\Model.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Model\Row.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Model\Table.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CommonDictionary.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="View\AbstractView.h">
+    <ClInclude Include="Controller\Row.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\Table.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

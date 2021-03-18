@@ -1,5 +1,5 @@
-#ifndef TABLE
-#define TABLE
+#ifndef TABLE_H
+#define TABLE_H
 
 #include <vector>
 #include <string>
@@ -47,4 +47,4 @@ private:
 
 };
 
-#endif TABLE
+#endif TABLE_H

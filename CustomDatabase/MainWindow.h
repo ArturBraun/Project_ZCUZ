@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW
-#define MAINWINDOW
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
@@ -10,10 +10,9 @@
 #include "View/AddTableWidget.h"
 #include "View/EditTableWidget.h"
 #include "View/ShowTableView.h"
-#include "View/AbstractView.h"
 
 //! Main window class representing main window in application GUI
-class MainWindow : public QMainWindow, public AbstractView
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
@@ -53,4 +52,4 @@ private:
     std::shared_ptr<Controller> controllerPtr;
 };
 
-#endif
+#endif MAINWINDOW_H

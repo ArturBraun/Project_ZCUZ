@@ -1,10 +1,10 @@
-#ifndef SHOWTABLEWIDGET
-#define SHOWTABLEWIDGET
+#ifndef SHOWTABLEWIDGET_H
+#define SHOWTABLEWIDGET_H
 
 #include <QWidget>
 #include "ui_ShowTableView.h"
 #include "../Controller/Controller.h"
-#include "../Model/Row.h"
+#include "../Controller/Row.h"
 #include "../CommonDictionary.h"
 
 class ShowTableView : public QWidget
@@ -24,4 +24,4 @@ private:
 	std::shared_ptr<Table> currentTable;
 };
 
-#endif SHOWTABLEWIDGET
+#endif SHOWTABLEWIDGET_H

@@ -1,5 +1,5 @@
-#ifndef CHOOSETABLEWIDGET
-#define CHOOSETABLEWIDGET
+#ifndef CHOOSETABLEWIDGET_H
+#define CHOOSETABLEWIDGET_H
 
 #include <QWidget>
 #include "ui_ChooseTableWidget.h"
@@ -29,4 +29,4 @@ private:
 	std::string viewType;
 };
 
-#endif CHOOSETABLEWIDGET
+#endif CHOOSETABLEWIDGET_H

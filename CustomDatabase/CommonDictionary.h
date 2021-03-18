@@ -1,5 +1,5 @@
-#ifndef COMMONDICTIONARY
-#define COMMONDICTIONARY
+#ifndef COMMONDICTIONARY_H
+#define COMMONDICTIONARY_H
 
 #include <variant>
 #include <string>
@@ -26,4 +26,4 @@
 #define SHOW_TABLE_BUTTON_TEXT std::string("Pokaz tabele")
 
 
-#endif COMMONDICTIONARY
+#endif COMMONDICTIONARY_H

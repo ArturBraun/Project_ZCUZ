@@ -4,32 +4,43 @@ Controller::Controller()
 {
 
 }
-void Controller::setModel(std::shared_ptr<Model> modelPtr)
-{
-	this->modelPtr = modelPtr;
-}
-void Controller::setView(std::shared_ptr<AbstractView> viewPtr)
-{
-	this->viewPtr = viewPtr;
-}
-std::vector<std::string> Controller::getTablesNames()
-{
-	return this->modelPtr->getTablesNames();
-}
+
 void Controller::createNewTable(std::string& tableName, ColumnsData& columnTypesAndNames)
 {
-	this->modelPtr->createNewTable(tableName, columnTypesAndNames);
+	this->tables.push_back(std::make_shared<Table>(tableName, columnTypesAndNames));
 }
+
+std::vector<std::string> Controller::getTablesNames()
+{
+	std::vector<std::string> tablesNames;
+
+	for (int i = 0; i < tables.size(); ++i) {
+		tablesNames.push_back(this->tables[i]->getTableName());
+	}
+
+	return tablesNames;
+}
+
 void Controller::deleteTable(int tableId)
 {
-	this->modelPtr->deleteTable(tableId);
+	this->tables.erase(this->tables.begin() + tableId);
 }
+
 std::shared_ptr<Table> Controller::getTablePtr(int tableId)
 {
-	return this->modelPtr->getTablePtr(tableId);
+	return this->tables[tableId];
 }
+
 bool Controller::isTableNameUsed(std::string& tableName)
 {
-	return this->modelPtr->isTableNameUsed(tableName);
+	for (auto& table : tables)
+	{
+		if (table->getTableName() == tableName)
+		{
+			return true;
+		}
+	}
+
+	return false;
 }
 

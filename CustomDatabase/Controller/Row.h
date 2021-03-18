@@ -1,5 +1,5 @@
-#ifndef ROW
-#define ROW
+#ifndef ROW_H
+#define ROW_H
 
 #include "../CommonDictionary.h"
 
@@ -24,5 +24,5 @@ private:
 	std::unordered_map<int, var> rowData;
 };
 
-#endif ROW
+#endif ROW_H
 

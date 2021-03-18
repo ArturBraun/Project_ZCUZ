@@ -1,5 +1,5 @@
-#ifndef ADDTABLEWIDGET
-#define ADDTABLEWIDGET
+#ifndef ADDTABLEWIDGET_H
+#define ADDTABLEWIDGET_H
 
 #include <QWidget>
 #include "ui_AddTableWidget.h"
@@ -43,4 +43,4 @@ private:
 	std::shared_ptr<Controller> controllerPtr;
 };
 
-#endif ADDTABLEWIDGET
+#endif ADDTABLEWIDGET_H

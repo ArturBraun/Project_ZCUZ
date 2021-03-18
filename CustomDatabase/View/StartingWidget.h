@@ -1,5 +1,5 @@
-#ifndef STARTINGWIDGET
-#define STARTINGWIDGET
+#ifndef STARTINGWIDGET_H
+#define STARTINGWIDGET_H
 
 #include <QWidget>
 #include "ui_StartingWidget.h"
@@ -16,4 +16,4 @@ private:
 	Ui::StartingWidget ui;
 };
 
-#endif STARTINGWIDGET
+#endif STARTINGWIDGET_H
