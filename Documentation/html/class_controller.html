@@ -71,35 +71,41 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class that stores general database data (tables) and provides interface to perform operations.  
+ <a href="class_controller.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_controller_8h_source.html">Controller.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a95c56822d667e94b031451729ce069a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a95c56822d667e94b031451729ce069a9">Controller</a> ()</td></tr>
+<tr class="memdesc:a95c56822d667e94b031451729ce069a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="class_controller.html#a95c56822d667e94b031451729ce069a9">More...</a><br /></td></tr>
 <tr class="separator:a95c56822d667e94b031451729ce069a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6910df4f19bedbe054950fbe5e02e61c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a6910df4f19bedbe054950fbe5e02e61c">setModel</a> (std::shared_ptr&lt; <a class="el" href="class_model.html">Model</a> &gt; <a class="el" href="class_controller.html#a3169439592a1572b58429257459c5ca9">modelPtr</a>)</td></tr>
-<tr class="separator:a6910df4f19bedbe054950fbe5e02e61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeb53ca34271a8576b6381e8e223cae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#adeb53ca34271a8576b6381e8e223cae6">setView</a> (std::shared_ptr&lt; <a class="el" href="class_abstract_view.html">AbstractView</a> &gt; <a class="el" href="class_controller.html#a8cf8ac1700268a00822a1bc3d5beda62">viewPtr</a>)</td></tr>
-<tr class="separator:adeb53ca34271a8576b6381e8e223cae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4456026cac0809fcce076ef83b532629"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a4456026cac0809fcce076ef83b532629">getTablesNames</a> ()</td></tr>
+<tr class="memdesc:a4456026cac0809fcce076ef83b532629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter of all existing table names.  <a href="class_controller.html#a4456026cac0809fcce076ef83b532629">More...</a><br /></td></tr>
 <tr class="separator:a4456026cac0809fcce076ef83b532629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d909236b7313068e90e4b8c013f32b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a03d909236b7313068e90e4b8c013f32b">createNewTable</a> (std::string &amp;tableName, <a class="el" href="_common_dictionary_8h.html#a90dcc97afa6dd71a56cae3512dc3e295">ColumnsData</a> &amp;columnTypesAndNames)</td></tr>
+<tr class="memdesc:a03d909236b7313068e90e4b8c013f32b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that creates new table.  <a href="class_controller.html#a03d909236b7313068e90e4b8c013f32b">More...</a><br /></td></tr>
 <tr class="separator:a03d909236b7313068e90e4b8c013f32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3683b680f57078c837e4fc6a060f7064"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a3683b680f57078c837e4fc6a060f7064">deleteTable</a> (int tableId)</td></tr>
+<tr class="memdesc:a3683b680f57078c837e4fc6a060f7064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that deletes table with given id.  <a href="class_controller.html#a3683b680f57078c837e4fc6a060f7064">More...</a><br /></td></tr>
 <tr class="separator:a3683b680f57078c837e4fc6a060f7064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3702168578bb0ea53161acc71e7af9c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_table.html">Table</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#ab3702168578bb0ea53161acc71e7af9c">getTablePtr</a> (int tableId)</td></tr>
+<tr class="memdesc:ab3702168578bb0ea53161acc71e7af9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that returns pointer to table with given id.  <a href="class_controller.html#ab3702168578bb0ea53161acc71e7af9c">More...</a><br /></td></tr>
 <tr class="separator:ab3702168578bb0ea53161acc71e7af9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5dd56e994d624af821a50378584657"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a6e5dd56e994d624af821a50378584657">isTableNameUsed</a> (std::string &amp;tableName)</td></tr>
+<tr class="memdesc:a6e5dd56e994d624af821a50378584657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that checks if table name is already used.  <a href="class_controller.html#a6e5dd56e994d624af821a50378584657">More...</a><br /></td></tr>
 <tr class="separator:a6e5dd56e994d624af821a50378584657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8cf8ac1700268a00822a1bc3d5beda62"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_abstract_view.html">AbstractView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a8cf8ac1700268a00822a1bc3d5beda62">viewPtr</a></td></tr>
-<tr class="separator:a8cf8ac1700268a00822a1bc3d5beda62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3169439592a1572b58429257459c5ca9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_model.html">Model</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a3169439592a1572b58429257459c5ca9">modelPtr</a></td></tr>
-<tr class="separator:a3169439592a1572b58429257459c5ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb86fdce158cec8ed4149baf35787bf5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_table.html">Table</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#afb86fdce158cec8ed4149baf35787bf5">tables</a></td></tr>
+<tr class="memdesc:afb86fdce158cec8ed4149baf35787bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of table pointers.  <a href="class_controller.html#afb86fdce158cec8ed4149baf35787bf5">More...</a><br /></td></tr>
+<tr class="separator:afb86fdce158cec8ed4149baf35787bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that stores general database data (tables) and provides interface to perform operations. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a95c56822d667e94b031451729ce069a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95c56822d667e94b031451729ce069a9">&#9670;&nbsp;</a></span>Controller()</h2>
 
@@ -114,6 +120,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Class constructor. </p>
 
 </div>
 </div>
@@ -144,6 +152,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Function that creates new table. </p>
+
 </div>
 </div>
 <a id="a3683b680f57078c837e4fc6a060f7064"></a>
@@ -161,6 +171,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Function that deletes table with given id. </p>
 
 </div>
 </div>
@@ -180,6 +192,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Function that returns pointer to table with given id. </p>
+
 </div>
 </div>
 <a id="a4456026cac0809fcce076ef83b532629"></a>
@@ -196,6 +210,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter of all existing table names. </p>
 
 </div>
 </div>
@@ -215,47 +231,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a6910df4f19bedbe054950fbe5e02e61c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6910df4f19bedbe054950fbe5e02e61c">&#9670;&nbsp;</a></span>setModel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Controller::setModel </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_model.html">Model</a> &gt;&#160;</td>
-          <td class="paramname"><em>modelPtr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adeb53ca34271a8576b6381e8e223cae6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adeb53ca34271a8576b6381e8e223cae6">&#9670;&nbsp;</a></span>setView()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Controller::setView </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_abstract_view.html">AbstractView</a> &gt;&#160;</td>
-          <td class="paramname"><em>viewPtr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Function that checks if table name is already used. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3169439592a1572b58429257459c5ca9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3169439592a1572b58429257459c5ca9">&#9670;&nbsp;</a></span>modelPtr</h2>
+<a id="afb86fdce158cec8ed4149baf35787bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb86fdce158cec8ed4149baf35787bf5">&#9670;&nbsp;</a></span>tables</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +246,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_model.html">Model</a>&gt; Controller::modelPtr</td>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="class_table.html">Table</a>&gt; &gt; Controller::tables</td>
         </tr>
       </table>
   </td>
@@ -274,27 +256,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a8cf8ac1700268a00822a1bc3d5beda62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cf8ac1700268a00822a1bc3d5beda62">&#9670;&nbsp;</a></span>viewPtr</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_abstract_view.html">AbstractView</a>&gt; Controller::viewPtr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Vector of table pointers. </p>
 
 </div>
 </div>

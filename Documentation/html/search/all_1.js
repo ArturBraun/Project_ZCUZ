@@ -13,7 +13,7 @@ var searchData=
   ['controllerptr_20',['controllerPtr',['../class_main_window.html#a24577c3e9c39bb4b3e0227a1d1e3740e',1,'MainWindow::controllerPtr()'],['../class_add_table_widget.html#a7c55817f016f1843f5777f14f992761f',1,'AddTableWidget::controllerPtr()'],['../class_choose_table_widget.html#af6b2b21df40662c813ec7c008f54e53a',1,'ChooseTableWidget::controllerPtr()']]],
   ['createguinewrow_21',['createGuiNewRow',['../class_edit_table_widget.html#ac4ce57fd3c41b511b6944eef058c7425',1,'EditTableWidget']]],
   ['createnewrow_22',['createNewRow',['../class_table.html#afd8acb63c4ceb68bb9855e634a7e9a64',1,'Table']]],
-  ['createnewtable_23',['createNewTable',['../class_controller.html#a03d909236b7313068e90e4b8c013f32b',1,'Controller::createNewTable()'],['../class_model.html#a3cc9d19731c055088016acf49b2aece7',1,'Model::createNewTable()']]],
+  ['createnewtable_23',['createNewTable',['../class_controller.html#a03d909236b7313068e90e4b8c013f32b',1,'Controller']]],
   ['createnewtableitem_24',['createNewTableItem',['../class_add_table_widget.html#a5a467cd98dcc07768a94d52d1eb834ef',1,'AddTableWidget::createNewTableItem()'],['../class_edit_table_widget.html#a6d114bb48f2a084d9142a68b83705f22',1,'EditTableWidget::createNewTableItem()'],['../class_show_table_view.html#a16baf3154fd11adcffd2e68d80c7dbb3',1,'ShowTableView::createNewTableItem()']]],
   ['currenttable_25',['currentTable',['../class_edit_table_widget.html#ae62b0ab5385526845d7c049fefdff5d1',1,'EditTableWidget::currentTable()'],['../class_show_table_view.html#a4d016a61d39e6810254b15ab48fe22b7',1,'ShowTableView::currentTable()']]]
 ];

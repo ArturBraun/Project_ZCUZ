@@ -71,29 +71,40 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class that represents particular row.  
+ <a href="class_row.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_row_8h_source.html">Row.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5cca50abc389396e26ec68cbd3fb6596"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_row.html#a5cca50abc389396e26ec68cbd3fb6596">Row</a> ()</td></tr>
+<tr class="memdesc:a5cca50abc389396e26ec68cbd3fb6596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="class_row.html#a5cca50abc389396e26ec68cbd3fb6596">More...</a><br /></td></tr>
 <tr class="separator:a5cca50abc389396e26ec68cbd3fb6596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afff30d6e5d00df42f50e7665c0a9d331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_row.html">Row</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_row.html#afff30d6e5d00df42f50e7665c0a9d331">operator=</a> (const <a class="el" href="class_row.html">Row</a> &amp;rightRow)</td></tr>
+<tr class="memdesc:afff30d6e5d00df42f50e7665c0a9d331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator overload.  <a href="class_row.html#afff30d6e5d00df42f50e7665c0a9d331">More...</a><br /></td></tr>
 <tr class="separator:afff30d6e5d00df42f50e7665c0a9d331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa094f536c7ec7aa5ea9ac6e7a3cbdef6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_row.html#aa094f536c7ec7aa5ea9ac6e7a3cbdef6">Row</a> (const <a class="el" href="class_row.html">Row</a> &amp;rightRow)</td></tr>
+<tr class="memdesc:aa094f536c7ec7aa5ea9ac6e7a3cbdef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="class_row.html#aa094f536c7ec7aa5ea9ac6e7a3cbdef6">More...</a><br /></td></tr>
 <tr class="separator:aa094f536c7ec7aa5ea9ac6e7a3cbdef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80c7a9dfe6c4de424caa32960ec788ff"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a80c7a9dfe6c4de424caa32960ec788ff"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_row.html#a80c7a9dfe6c4de424caa32960ec788ff">setValueForColumn</a> (int columnId, T value)</td></tr>
+<tr class="memdesc:a80c7a9dfe6c4de424caa32960ec788ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template function that sets value for column with specified id.  <a href="class_row.html#a80c7a9dfe6c4de424caa32960ec788ff">More...</a><br /></td></tr>
 <tr class="separator:a80c7a9dfe6c4de424caa32960ec788ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3333bbe8b6d18d286cee65ec21a5d51"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae3333bbe8b6d18d286cee65ec21a5d51"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_row.html#ae3333bbe8b6d18d286cee65ec21a5d51">getValueForColumn</a> (int columnId)</td></tr>
+<tr class="memdesc:ae3333bbe8b6d18d286cee65ec21a5d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template function that gets value for column with specified id.  <a href="class_row.html#ae3333bbe8b6d18d286cee65ec21a5d51">More...</a><br /></td></tr>
 <tr class="separator:ae3333bbe8b6d18d286cee65ec21a5d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab5a82b8aee6cf3d7c9cc7aecf8bc9aad"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; int, <a class="el" href="_common_dictionary_8h.html#a1b0936415a643c88ce543099c10e0d7f">var</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_row.html#ab5a82b8aee6cf3d7c9cc7aecf8bc9aad">rowData</a></td></tr>
+<tr class="memdesc:ab5a82b8aee6cf3d7c9cc7aecf8bc9aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unordered map that stores rows data. Map key is column id and map value is row value for this column.  <a href="class_row.html#ab5a82b8aee6cf3d7c9cc7aecf8bc9aad">More...</a><br /></td></tr>
 <tr class="separator:ab5a82b8aee6cf3d7c9cc7aecf8bc9aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that represents particular row. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5cca50abc389396e26ec68cbd3fb6596"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cca50abc389396e26ec68cbd3fb6596">&#9670;&nbsp;</a></span>Row() <span class="overload">[1/2]</span></h2>
 
@@ -108,6 +119,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Class constructor. </p>
 
 </div>
 </div>
@@ -126,6 +139,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Copy constructor. </p>
 
 </div>
 </div>
@@ -156,6 +171,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Template function that gets value for column with specified id. </p>
+
 </div>
 </div>
 <a id="afff30d6e5d00df42f50e7665c0a9d331"></a>
@@ -173,6 +190,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Assignment operator overload. </p>
 
 </div>
 </div>
@@ -212,6 +231,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Template function that sets value for column with specified id. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -235,11 +256,13 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Unordered map that stores rows data. Map key is column id and map value is row value for this column. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>CustomDatabase/Model/<a class="el" href="_row_8h_source.html">Row.h</a></li>
-<li>CustomDatabase/Model/<a class="el" href="_row_8cpp.html">Row.cpp</a></li>
+<li>CustomDatabase/Controller/<a class="el" href="_row_8h_source.html">Row.h</a></li>
+<li>CustomDatabase/Controller/<a class="el" href="_row_8cpp.html">Row.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

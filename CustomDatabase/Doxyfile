@@ -838,7 +838,6 @@ WARN_LOGFILE           =
 
 INPUT                  = .\CustomDatabase \
                          .\CustomDatabase\Controller \
-                         .\CustomDatabase\Model \
                          .\CustomDatabase\View
 
 # This tag can be used to specify the character encoding of the source files

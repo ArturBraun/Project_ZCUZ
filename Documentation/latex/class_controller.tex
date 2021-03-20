@@ -2,35 +2,37 @@
 \label{class_controller}\index{Controller@{Controller}}
 
 
+Class that stores general database data (tables) and provides interface to perform operations.  
+
+
+
+
 {\ttfamily \#include $<$Controller.\+h$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_controller_a95c56822d667e94b031451729ce069a9}{Controller}} ()
-\item 
-void \mbox{\hyperlink{class_controller_a6910df4f19bedbe054950fbe5e02e61c}{set\+Model}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \mbox{\hyperlink{class_controller_a3169439592a1572b58429257459c5ca9}{model\+Ptr}})
-\item 
-void \mbox{\hyperlink{class_controller_adeb53ca34271a8576b6381e8e223cae6}{set\+View}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_abstract_view}{Abstract\+View}} $>$ \mbox{\hyperlink{class_controller_a8cf8ac1700268a00822a1bc3d5beda62}{view\+Ptr}})
-\item 
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
 std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_controller_a4456026cac0809fcce076ef83b532629}{get\+Tables\+Names}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Getter of all existing table names. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_controller_a03d909236b7313068e90e4b8c013f32b}{create\+New\+Table}} (std\+::string \&table\+Name, \mbox{\hyperlink{_common_dictionary_8h_a90dcc97afa6dd71a56cae3512dc3e295}{Columns\+Data}} \&column\+Types\+And\+Names)
-\item 
+\begin{DoxyCompactList}\small\item\em Function that creates new table. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_controller_a3683b680f57078c837e4fc6a060f7064}{delete\+Table}} (int table\+Id)
-\item 
+\begin{DoxyCompactList}\small\item\em Function that deletes table with given id. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyperlink{class_controller_ab3702168578bb0ea53161acc71e7af9c}{get\+Table\+Ptr}} (int table\+Id)
-\item 
+\begin{DoxyCompactList}\small\item\em Function that returns pointer to table with given id. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_controller_a6e5dd56e994d624af821a50378584657}{is\+Table\+Name\+Used}} (std\+::string \&table\+Name)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Function that checks if table name is already used. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_abstract_view}{Abstract\+View}} $>$ \mbox{\hyperlink{class_controller_a8cf8ac1700268a00822a1bc3d5beda62}{view\+Ptr}}
-\item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \mbox{\hyperlink{class_controller_a3169439592a1572b58429257459c5ca9}{model\+Ptr}}
-\end{DoxyCompactItemize}
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ $>$ \mbox{\hyperlink{class_controller_afb86fdce158cec8ed4149baf35787bf5}{tables}}
+\begin{DoxyCompactList}\small\item\em Vector of table pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class that stores general database data (tables) and provides interface to perform operations. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_controller_a95c56822d667e94b031451729ce069a9}\label{class_controller_a95c56822d667e94b031451729ce069a9}} 
@@ -41,6 +43,10 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \mbox{\hyper
 
 
 
+Class constructor. 
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_controller_a03d909236b7313068e90e4b8c013f32b}\label{class_controller_a03d909236b7313068e90e4b8c013f32b}} 
 \index{Controller@{Controller}!createNewTable@{createNewTable}}
@@ -48,11 +54,19 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{createNewTable()}{createNewTable()}}
 {\footnotesize\ttfamily void Controller\+::create\+New\+Table (\begin{DoxyParamCaption}\item[{std\+::string \&}]{table\+Name,  }\item[{\mbox{\hyperlink{_common_dictionary_8h_a90dcc97afa6dd71a56cae3512dc3e295}{Columns\+Data}} \&}]{column\+Types\+And\+Names }\end{DoxyParamCaption})}
 
+
+
+Function that creates new table. 
+
 \mbox{\Hypertarget{class_controller_a3683b680f57078c837e4fc6a060f7064}\label{class_controller_a3683b680f57078c837e4fc6a060f7064}} 
 \index{Controller@{Controller}!deleteTable@{deleteTable}}
 \index{deleteTable@{deleteTable}!Controller@{Controller}}
 \doxysubsubsection{\texorpdfstring{deleteTable()}{deleteTable()}}
 {\footnotesize\ttfamily void Controller\+::delete\+Table (\begin{DoxyParamCaption}\item[{int}]{table\+Id }\end{DoxyParamCaption})}
+
+
+
+Function that deletes table with given id. 
 
 \mbox{\Hypertarget{class_controller_ab3702168578bb0ea53161acc71e7af9c}\label{class_controller_ab3702168578bb0ea53161acc71e7af9c}} 
 \index{Controller@{Controller}!getTablePtr@{getTablePtr}}
@@ -60,11 +74,19 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{getTablePtr()}{getTablePtr()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ Controller\+::get\+Table\+Ptr (\begin{DoxyParamCaption}\item[{int}]{table\+Id }\end{DoxyParamCaption})}
 
+
+
+Function that returns pointer to table with given id. 
+
 \mbox{\Hypertarget{class_controller_a4456026cac0809fcce076ef83b532629}\label{class_controller_a4456026cac0809fcce076ef83b532629}} 
 \index{Controller@{Controller}!getTablesNames@{getTablesNames}}
 \index{getTablesNames@{getTablesNames}!Controller@{Controller}}
 \doxysubsubsection{\texorpdfstring{getTablesNames()}{getTablesNames()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Controller\+::get\+Tables\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter of all existing table names. 
 
 \mbox{\Hypertarget{class_controller_a6e5dd56e994d624af821a50378584657}\label{class_controller_a6e5dd56e994d624af821a50378584657}} 
 \index{Controller@{Controller}!isTableNameUsed@{isTableNameUsed}}
@@ -72,32 +94,22 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{isTableNameUsed()}{isTableNameUsed()}}
 {\footnotesize\ttfamily bool Controller\+::is\+Table\+Name\+Used (\begin{DoxyParamCaption}\item[{std\+::string \&}]{table\+Name }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_controller_a6910df4f19bedbe054950fbe5e02e61c}\label{class_controller_a6910df4f19bedbe054950fbe5e02e61c}} 
-\index{Controller@{Controller}!setModel@{setModel}}
-\index{setModel@{setModel}!Controller@{Controller}}
-\doxysubsubsection{\texorpdfstring{setModel()}{setModel()}}
-{\footnotesize\ttfamily void Controller\+::set\+Model (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$}]{model\+Ptr }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_controller_adeb53ca34271a8576b6381e8e223cae6}\label{class_controller_adeb53ca34271a8576b6381e8e223cae6}} 
-\index{Controller@{Controller}!setView@{setView}}
-\index{setView@{setView}!Controller@{Controller}}
-\doxysubsubsection{\texorpdfstring{setView()}{setView()}}
-{\footnotesize\ttfamily void Controller\+::set\+View (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_abstract_view}{Abstract\+View}} $>$}]{view\+Ptr }\end{DoxyParamCaption})}
+
+Function that checks if table name is already used. 
 
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_controller_a3169439592a1572b58429257459c5ca9}\label{class_controller_a3169439592a1572b58429257459c5ca9}} 
-\index{Controller@{Controller}!modelPtr@{modelPtr}}
-\index{modelPtr@{modelPtr}!Controller@{Controller}}
-\doxysubsubsection{\texorpdfstring{modelPtr}{modelPtr}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_model}{Model}}$>$ Controller\+::model\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_controller_afb86fdce158cec8ed4149baf35787bf5}\label{class_controller_afb86fdce158cec8ed4149baf35787bf5}} 
+\index{Controller@{Controller}!tables@{tables}}
+\index{tables@{tables}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{tables}{tables}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_table}{Table}}$>$ $>$ Controller\+::tables\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{class_controller_a8cf8ac1700268a00822a1bc3d5beda62}\label{class_controller_a8cf8ac1700268a00822a1bc3d5beda62}} 
-\index{Controller@{Controller}!viewPtr@{viewPtr}}
-\index{viewPtr@{viewPtr}!Controller@{Controller}}
-\doxysubsubsection{\texorpdfstring{viewPtr}{viewPtr}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_abstract_view}{Abstract\+View}}$>$ Controller\+::view\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+Vector of table pointers. 
 
 
 
