@@ -2,6 +2,11 @@
 \label{class_choose_table_widget}\index{ChooseTableWidget@{ChooseTableWidget}}
 
 
+Class that represents reusable user interface to select the table.  
+
+
+
+
 {\ttfamily \#include $<$Choose\+Table\+Widget.\+h$>$}
 
 Inheritance diagram for Choose\+Table\+Widget\+:\begin{figure}[H]
@@ -14,33 +19,36 @@ Inheritance diagram for Choose\+Table\+Widget\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_choose_table_widget_ad60b54c67424a9ee136203c363410f44}{cancel\+Button\+Clicked}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Function which is run when cancel button is clicked. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_choose_table_widget_a9efdf21b1f7360330cd238761ac173f9}{ok\+Button\+Clicked}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Function which is run when acceptance button is clicked. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_choose_table_widget_ab8fddf95f4b68b11fcf10c298830dce5}{restore\+Default\+Widget}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Signal which is emitted to parent to restore default view. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_choose_table_widget_a588d42183c9a96a48034098d4bcc3454}{table\+Chosen}} (int table\+Id, std\+::string \mbox{\hyperlink{class_choose_table_widget_a93076efe262481db89b3322c3e2f9817}{view\+Type}})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Signal which is emitted when table is chosen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_choose_table_widget_ae4094fadece25c3f07915d132f3d59db}{Choose\+Table\+Widget}} (std\+::string \&button\+Text, std\+::string \&\mbox{\hyperlink{class_choose_table_widget_a93076efe262481db89b3322c3e2f9817}{view\+Type}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$ \mbox{\hyperlink{class_choose_table_widget_af6b2b21df40662c813ec7c008f54e53a}{controller\+Ptr}}, Q\+Widget $\ast$parent=Q\+\_\+\+N\+U\+L\+L\+P\+TR)
-\item 
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_choose_table_widget_a22075d11dbcdadd97612f228298443e5}{$\sim$\+Choose\+Table\+Widget}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 Ui\+::\+Choose\+Table\+Widget \mbox{\hyperlink{class_choose_table_widget_a6a07c68317e5d89ba4fc137550b10444}{ui}}
-\item 
+\begin{DoxyCompactList}\small\item\em Variable that represents user interface objects. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$ \mbox{\hyperlink{class_choose_table_widget_af6b2b21df40662c813ec7c008f54e53a}{controller\+Ptr}}
-\item 
+\begin{DoxyCompactList}\small\item\em Pointer to controller. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_choose_table_widget_a93076efe262481db89b3322c3e2f9817}{view\+Type}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em flag which says from which source this widget was displayed \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class that represents reusable user interface to select the table. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_choose_table_widget_ae4094fadece25c3f07915d132f3d59db}\label{class_choose_table_widget_ae4094fadece25c3f07915d132f3d59db}} 
@@ -49,11 +57,19 @@ std\+::string \mbox{\hyperlink{class_choose_table_widget_a93076efe262481db89b332
 \doxysubsubsection{\texorpdfstring{ChooseTableWidget()}{ChooseTableWidget()}}
 {\footnotesize\ttfamily Choose\+Table\+Widget\+::\+Choose\+Table\+Widget (\begin{DoxyParamCaption}\item[{std\+::string \&}]{button\+Text,  }\item[{std\+::string \&}]{view\+Type,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$}]{controller\+Ptr,  }\item[{Q\+Widget $\ast$}]{parent = {\ttfamily Q\+\_\+NULLPTR} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_choose_table_widget_a22075d11dbcdadd97612f228298443e5}\label{class_choose_table_widget_a22075d11dbcdadd97612f228298443e5}} 
+
+
+Class constructor. 
+
+Arguments\+: button\+Text -\/ text which is displayed on button that accepts the choice view\+Type -\/ flag which says from which source this widget was displayed \mbox{\Hypertarget{class_choose_table_widget_a22075d11dbcdadd97612f228298443e5}\label{class_choose_table_widget_a22075d11dbcdadd97612f228298443e5}} 
 \index{ChooseTableWidget@{ChooseTableWidget}!````~ChooseTableWidget@{$\sim$ChooseTableWidget}}
 \index{````~ChooseTableWidget@{$\sim$ChooseTableWidget}!ChooseTableWidget@{ChooseTableWidget}}
 \doxysubsubsection{\texorpdfstring{$\sim$ChooseTableWidget()}{~ChooseTableWidget()}}
 {\footnotesize\ttfamily Choose\+Table\+Widget\+::$\sim$\+Choose\+Table\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Class destructor. 
 
 
 
@@ -64,17 +80,29 @@ std\+::string \mbox{\hyperlink{class_choose_table_widget_a93076efe262481db89b332
 \doxysubsubsection{\texorpdfstring{cancelButtonClicked}{cancelButtonClicked}}
 {\footnotesize\ttfamily void Choose\+Table\+Widget\+::cancel\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
+
+
+Function which is run when cancel button is clicked. 
+
 \mbox{\Hypertarget{class_choose_table_widget_a9efdf21b1f7360330cd238761ac173f9}\label{class_choose_table_widget_a9efdf21b1f7360330cd238761ac173f9}} 
 \index{ChooseTableWidget@{ChooseTableWidget}!okButtonClicked@{okButtonClicked}}
 \index{okButtonClicked@{okButtonClicked}!ChooseTableWidget@{ChooseTableWidget}}
 \doxysubsubsection{\texorpdfstring{okButtonClicked}{okButtonClicked}}
 {\footnotesize\ttfamily void Choose\+Table\+Widget\+::ok\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
+
+
+Function which is run when acceptance button is clicked. 
+
 \mbox{\Hypertarget{class_choose_table_widget_ab8fddf95f4b68b11fcf10c298830dce5}\label{class_choose_table_widget_ab8fddf95f4b68b11fcf10c298830dce5}} 
 \index{ChooseTableWidget@{ChooseTableWidget}!restoreDefaultWidget@{restoreDefaultWidget}}
 \index{restoreDefaultWidget@{restoreDefaultWidget}!ChooseTableWidget@{ChooseTableWidget}}
 \doxysubsubsection{\texorpdfstring{restoreDefaultWidget}{restoreDefaultWidget}}
 {\footnotesize\ttfamily void Choose\+Table\+Widget\+::restore\+Default\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal which is emitted to parent to restore default view. 
 
 \mbox{\Hypertarget{class_choose_table_widget_a588d42183c9a96a48034098d4bcc3454}\label{class_choose_table_widget_a588d42183c9a96a48034098d4bcc3454}} 
 \index{ChooseTableWidget@{ChooseTableWidget}!tableChosen@{tableChosen}}
@@ -84,6 +112,10 @@ std\+::string \mbox{\hyperlink{class_choose_table_widget_a93076efe262481db89b332
 
 
 
+Signal which is emitted when table is chosen. 
+
+table\+Id -\/ says which table was choosed view\+Type -\/ flag which says from which source this widget was displayed 
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{class_choose_table_widget_af6b2b21df40662c813ec7c008f54e53a}\label{class_choose_table_widget_af6b2b21df40662c813ec7c008f54e53a}} 
 \index{ChooseTableWidget@{ChooseTableWidget}!controllerPtr@{controllerPtr}}
@@ -91,17 +123,29 @@ std\+::string \mbox{\hyperlink{class_choose_table_widget_a93076efe262481db89b332
 \doxysubsubsection{\texorpdfstring{controllerPtr}{controllerPtr}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_controller}{Controller}}$>$ Choose\+Table\+Widget\+::controller\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Pointer to controller. 
+
 \mbox{\Hypertarget{class_choose_table_widget_a6a07c68317e5d89ba4fc137550b10444}\label{class_choose_table_widget_a6a07c68317e5d89ba4fc137550b10444}} 
 \index{ChooseTableWidget@{ChooseTableWidget}!ui@{ui}}
 \index{ui@{ui}!ChooseTableWidget@{ChooseTableWidget}}
 \doxysubsubsection{\texorpdfstring{ui}{ui}}
 {\footnotesize\ttfamily Ui\+::\+Choose\+Table\+Widget Choose\+Table\+Widget\+::ui\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Variable that represents user interface objects. 
+
 \mbox{\Hypertarget{class_choose_table_widget_a93076efe262481db89b3322c3e2f9817}\label{class_choose_table_widget_a93076efe262481db89b3322c3e2f9817}} 
 \index{ChooseTableWidget@{ChooseTableWidget}!viewType@{viewType}}
 \index{viewType@{viewType}!ChooseTableWidget@{ChooseTableWidget}}
 \doxysubsubsection{\texorpdfstring{viewType}{viewType}}
 {\footnotesize\ttfamily std\+::string Choose\+Table\+Widget\+::view\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+flag which says from which source this widget was displayed 
 
 
 
