@@ -2,6 +2,11 @@
 \label{class_show_table_view}\index{ShowTableView@{ShowTableView}}
 
 
+Class that is responsible for displaying content of table with specfied id.  
+
+
+
+
 {\ttfamily \#include $<$Show\+Table\+View.\+h$>$}
 
 Inheritance diagram for Show\+Table\+View\+:\begin{figure}[H]
@@ -14,23 +19,28 @@ Inheritance diagram for Show\+Table\+View\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_show_table_view_a934e1f501ffd54eabf6430d9bdcafc02}{Show\+Table\+View}} (int current\+Table\+Id, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$ controller\+Ptr, Q\+Widget $\ast$parent=Q\+\_\+\+N\+U\+L\+L\+P\+TR)
-\item 
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_show_table_view_aa09b4e7d042460cde13962fb96ef2c01}{$\sim$\+Show\+Table\+View}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_show_table_view_a9ba97db3edfc62283ee444a536d99f43}{load\+Sorted\+Rows\+Into\+Gui}} (int sorting\+Column\+Id, bool sort\+Descending=false)
-\item 
+\begin{DoxyCompactList}\small\item\em Helper funtion which calls table\textquotesingle{}s function to sort rows and displays them in G\+UI. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_show_table_view_a16baf3154fd11adcffd2e68d80c7dbb3}{create\+New\+Table\+Item}} (int x, int y, Q\+String \&text)
-\item 
+\begin{DoxyCompactList}\small\item\em Helper function responsible for creating new table cell in G\+UI. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_show_table_view_a0692b1c9107828682766ea204b8dbfa2}{sort\+Push\+Button\+Clicked}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Function that is called when sort push button is clicked. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 Ui\+::\+Show\+Table\+View \mbox{\hyperlink{class_show_table_view_ab31b16617b7f106053f56b128e52ae7d}{ui}}
-\item 
+\begin{DoxyCompactList}\small\item\em Qt user interface variable. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyperlink{class_show_table_view_a4d016a61d39e6810254b15ab48fe22b7}{current\+Table}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to current displayed table. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class that is responsible for displaying content of table with specfied id. 
+
+It enables user to sort rows in ascending / descending order based on column id 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_show_table_view_a934e1f501ffd54eabf6430d9bdcafc02}\label{class_show_table_view_a934e1f501ffd54eabf6430d9bdcafc02}} 
@@ -39,11 +49,19 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{ShowTableView()}{ShowTableView()}}
 {\footnotesize\ttfamily Show\+Table\+View\+::\+Show\+Table\+View (\begin{DoxyParamCaption}\item[{int}]{current\+Table\+Id,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$}]{controller\+Ptr,  }\item[{Q\+Widget $\ast$}]{parent = {\ttfamily Q\+\_\+NULLPTR} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_show_table_view_aa09b4e7d042460cde13962fb96ef2c01}\label{class_show_table_view_aa09b4e7d042460cde13962fb96ef2c01}} 
+
+
+Class constructor. 
+
+current\+Table\+Id -\/ id of edited table controller\+Ptr -\/ pointer to controller class \mbox{\Hypertarget{class_show_table_view_aa09b4e7d042460cde13962fb96ef2c01}\label{class_show_table_view_aa09b4e7d042460cde13962fb96ef2c01}} 
 \index{ShowTableView@{ShowTableView}!````~ShowTableView@{$\sim$ShowTableView}}
 \index{````~ShowTableView@{$\sim$ShowTableView}!ShowTableView@{ShowTableView}}
 \doxysubsubsection{\texorpdfstring{$\sim$ShowTableView()}{~ShowTableView()}}
 {\footnotesize\ttfamily Show\+Table\+View\+::$\sim$\+Show\+Table\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Class destructor. 
 
 
 
@@ -54,11 +72,19 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{createNewTableItem()}{createNewTableItem()}}
 {\footnotesize\ttfamily void Show\+Table\+View\+::create\+New\+Table\+Item (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{Q\+String \&}]{text }\end{DoxyParamCaption})}
 
+
+
+Helper function responsible for creating new table cell in G\+UI. 
+
 \mbox{\Hypertarget{class_show_table_view_a9ba97db3edfc62283ee444a536d99f43}\label{class_show_table_view_a9ba97db3edfc62283ee444a536d99f43}} 
 \index{ShowTableView@{ShowTableView}!loadSortedRowsIntoGui@{loadSortedRowsIntoGui}}
 \index{loadSortedRowsIntoGui@{loadSortedRowsIntoGui}!ShowTableView@{ShowTableView}}
 \doxysubsubsection{\texorpdfstring{loadSortedRowsIntoGui()}{loadSortedRowsIntoGui()}}
 {\footnotesize\ttfamily void Show\+Table\+View\+::load\+Sorted\+Rows\+Into\+Gui (\begin{DoxyParamCaption}\item[{int}]{sorting\+Column\+Id,  }\item[{bool}]{sort\+Descending = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Helper funtion which calls table\textquotesingle{}s function to sort rows and displays them in G\+UI. 
 
 \mbox{\Hypertarget{class_show_table_view_a0692b1c9107828682766ea204b8dbfa2}\label{class_show_table_view_a0692b1c9107828682766ea204b8dbfa2}} 
 \index{ShowTableView@{ShowTableView}!sortPushButtonClicked@{sortPushButtonClicked}}
@@ -68,6 +94,10 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyper
 
 
 
+Function that is called when sort push button is clicked. 
+
+It calls helper fuction load\+Sorted\+Rows\+Into\+Gui to delegate the responsibility 
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{class_show_table_view_a4d016a61d39e6810254b15ab48fe22b7}\label{class_show_table_view_a4d016a61d39e6810254b15ab48fe22b7}} 
 \index{ShowTableView@{ShowTableView}!currentTable@{currentTable}}
@@ -75,11 +105,19 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{currentTable}{currentTable}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_table}{Table}}$>$ Show\+Table\+View\+::current\+Table\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Pointer to current displayed table. 
+
 \mbox{\Hypertarget{class_show_table_view_ab31b16617b7f106053f56b128e52ae7d}\label{class_show_table_view_ab31b16617b7f106053f56b128e52ae7d}} 
 \index{ShowTableView@{ShowTableView}!ui@{ui}}
 \index{ui@{ui}!ShowTableView@{ShowTableView}}
 \doxysubsubsection{\texorpdfstring{ui}{ui}}
 {\footnotesize\ttfamily Ui\+::\+Show\+Table\+View Show\+Table\+View\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Qt user interface variable. 
 
 
 

@@ -71,6 +71,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class that is responsible for displaying content of table with specfied id.  
+ <a href="class_show_table_view.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_show_table_view_8h_source.html">ShowTableView.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ShowTableView:</div>
@@ -82,24 +85,34 @@ Inheritance diagram for ShowTableView:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a934e1f501ffd54eabf6430d9bdcafc02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_show_table_view.html#a934e1f501ffd54eabf6430d9bdcafc02">ShowTableView</a> (int currentTableId, std::shared_ptr&lt; <a class="el" href="class_controller.html">Controller</a> &gt; controllerPtr, QWidget *parent=Q_NULLPTR)</td></tr>
+<tr class="memdesc:a934e1f501ffd54eabf6430d9bdcafc02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="class_show_table_view.html#a934e1f501ffd54eabf6430d9bdcafc02">More...</a><br /></td></tr>
 <tr class="separator:a934e1f501ffd54eabf6430d9bdcafc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa09b4e7d042460cde13962fb96ef2c01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_show_table_view.html#aa09b4e7d042460cde13962fb96ef2c01">~ShowTableView</a> ()</td></tr>
+<tr class="memdesc:aa09b4e7d042460cde13962fb96ef2c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor.  <a href="class_show_table_view.html#aa09b4e7d042460cde13962fb96ef2c01">More...</a><br /></td></tr>
 <tr class="separator:aa09b4e7d042460cde13962fb96ef2c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba97db3edfc62283ee444a536d99f43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_show_table_view.html#a9ba97db3edfc62283ee444a536d99f43">loadSortedRowsIntoGui</a> (int sortingColumnId, bool sortDescending=false)</td></tr>
+<tr class="memdesc:a9ba97db3edfc62283ee444a536d99f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper funtion which calls table's function to sort rows and displays them in GUI.  <a href="class_show_table_view.html#a9ba97db3edfc62283ee444a536d99f43">More...</a><br /></td></tr>
 <tr class="separator:a9ba97db3edfc62283ee444a536d99f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16baf3154fd11adcffd2e68d80c7dbb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_show_table_view.html#a16baf3154fd11adcffd2e68d80c7dbb3">createNewTableItem</a> (int x, int y, QString &amp;text)</td></tr>
+<tr class="memdesc:a16baf3154fd11adcffd2e68d80c7dbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function responsible for creating new table cell in GUI.  <a href="class_show_table_view.html#a16baf3154fd11adcffd2e68d80c7dbb3">More...</a><br /></td></tr>
 <tr class="separator:a16baf3154fd11adcffd2e68d80c7dbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0692b1c9107828682766ea204b8dbfa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_show_table_view.html#a0692b1c9107828682766ea204b8dbfa2">sortPushButtonClicked</a> ()</td></tr>
+<tr class="memdesc:a0692b1c9107828682766ea204b8dbfa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that is called when sort push button is clicked.  <a href="class_show_table_view.html#a0692b1c9107828682766ea204b8dbfa2">More...</a><br /></td></tr>
 <tr class="separator:a0692b1c9107828682766ea204b8dbfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab31b16617b7f106053f56b128e52ae7d"><td class="memItemLeft" align="right" valign="top">Ui::ShowTableView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_show_table_view.html#ab31b16617b7f106053f56b128e52ae7d">ui</a></td></tr>
+<tr class="memdesc:ab31b16617b7f106053f56b128e52ae7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Qt user interface variable.  <a href="class_show_table_view.html#ab31b16617b7f106053f56b128e52ae7d">More...</a><br /></td></tr>
 <tr class="separator:ab31b16617b7f106053f56b128e52ae7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d016a61d39e6810254b15ab48fe22b7"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_table.html">Table</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_show_table_view.html#a4d016a61d39e6810254b15ab48fe22b7">currentTable</a></td></tr>
+<tr class="memdesc:a4d016a61d39e6810254b15ab48fe22b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to current displayed table.  <a href="class_show_table_view.html#a4d016a61d39e6810254b15ab48fe22b7">More...</a><br /></td></tr>
 <tr class="separator:a4d016a61d39e6810254b15ab48fe22b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that is responsible for displaying content of table with specfied id. </p>
+<p>It enables user to sort rows in ascending / descending order based on column id </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a934e1f501ffd54eabf6430d9bdcafc02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a934e1f501ffd54eabf6430d9bdcafc02">&#9670;&nbsp;</a></span>ShowTableView()</h2>
 
@@ -132,6 +145,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Class constructor. </p>
+<p>currentTableId - id of edited table controllerPtr - pointer to controller class </p>
+
 </div>
 </div>
 <a id="aa09b4e7d042460cde13962fb96ef2c01"></a>
@@ -148,6 +164,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Class destructor. </p>
 
 </div>
 </div>
@@ -184,6 +202,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Helper function responsible for creating new table cell in GUI. </p>
+
 </div>
 </div>
 <a id="a9ba97db3edfc62283ee444a536d99f43"></a>
@@ -212,6 +232,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Helper funtion which calls table's function to sort rows and displays them in GUI. </p>
+
 </div>
 </div>
 <a id="a0692b1c9107828682766ea204b8dbfa2"></a>
@@ -228,6 +250,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Function that is called when sort push button is clicked. </p>
+<p>It calls helper fuction loadSortedRowsIntoGui to delegate the responsibility </p>
 
 </div>
 </div>
@@ -252,6 +277,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pointer to current displayed table. </p>
+
 </div>
 </div>
 <a id="ab31b16617b7f106053f56b128e52ae7d"></a>
@@ -273,6 +300,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Qt user interface variable. </p>
 
 </div>
 </div>

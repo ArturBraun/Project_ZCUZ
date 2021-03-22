@@ -2,6 +2,11 @@
 \label{class_edit_table_widget}\index{EditTableWidget@{EditTableWidget}}
 
 
+Class that represents user interface responsible for editing content of tables.  
+
+
+
+
 {\ttfamily \#include $<$Edit\+Table\+Widget.\+h$>$}
 
 Inheritance diagram for Edit\+Table\+Widget\+:\begin{figure}[H]
@@ -14,31 +19,34 @@ Inheritance diagram for Edit\+Table\+Widget\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_edit_table_widget_ad125993955218a71a4b92956ee5ae363}{Edit\+Table\+Widget}} (int current\+Table\+Id, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$ controller\+Ptr, Q\+Widget $\ast$parent=Q\+\_\+\+N\+U\+L\+L\+P\+TR)
-\item 
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_edit_table_widget_a5a449ebf8662cd1b145dd1e5b0cd1d2e}{$\sim$\+Edit\+Table\+Widget}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_edit_table_widget_a38fbd9577399d8a8c2b6630b092ec65c}{add\+Row\+Toggled}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Function which is run when add row radio button is toogled. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_edit_table_widget_a43aae6d3a23cc1465f18c9e1e68062b3}{delete\+Row\+Toggled}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Function which is run when delete row radio button is toogled. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_edit_table_widget_a946076e2f05d2642bb3a55af4665f7ab}{add\+Row\+Clicked}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Function which adds row -\/ collects data from UI and calls table\textquotesingle{}s function responsible for adding / editing row. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_edit_table_widget_ab591c66fbf325c760748806397ef90df}{delete\+Row\+Clicked}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Function which deletes row -\/ collects data from UI and calls table\textquotesingle{}s function responsible for deleting row. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_edit_table_widget_ac4b9195248dba8b03e4ad1ecedf5924e}{edit\+Table\+Cell}} (int row\+Id, int column\+Id, \mbox{\hyperlink{_common_dictionary_8h_a1b0936415a643c88ce543099c10e0d7f}{var}} \&new\+Value)
-\item 
+\begin{DoxyCompactList}\small\item\em Helper function which calls concrete table\textquotesingle{}s function responsible for editing existing cell. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_edit_table_widget_ac4ce57fd3c41b511b6944eef058c7425}{create\+Gui\+New\+Row}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Helper function responsible for creating new row in G\+UI. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_edit_table_widget_a6d114bb48f2a084d9142a68b83705f22}{create\+New\+Table\+Item}} (int x, int y, Q\+String \&text)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Helper function responsible for creating new table cell in G\+UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 Ui\+::\+Edit\+Table\+Widget \mbox{\hyperlink{class_edit_table_widget_a6138c8abe1c64c86f33e83fbbf6628f5}{ui}}
-\item 
+\begin{DoxyCompactList}\small\item\em Variable that holds reference to user interface objects. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyperlink{class_edit_table_widget_ae62b0ab5385526845d7c049fefdff5d1}{current\+Table}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to current table class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class that represents user interface responsible for editing content of tables. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_edit_table_widget_ad125993955218a71a4b92956ee5ae363}\label{class_edit_table_widget_ad125993955218a71a4b92956ee5ae363}} 
@@ -47,11 +55,19 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{EditTableWidget()}{EditTableWidget()}}
 {\footnotesize\ttfamily Edit\+Table\+Widget\+::\+Edit\+Table\+Widget (\begin{DoxyParamCaption}\item[{int}]{current\+Table\+Id,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_controller}{Controller}} $>$}]{controller\+Ptr,  }\item[{Q\+Widget $\ast$}]{parent = {\ttfamily Q\+\_\+NULLPTR} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_edit_table_widget_a5a449ebf8662cd1b145dd1e5b0cd1d2e}\label{class_edit_table_widget_a5a449ebf8662cd1b145dd1e5b0cd1d2e}} 
+
+
+Class constructor. 
+
+current\+Table\+Id -\/ id of edited table controller\+Ptr -\/ pointer to controller class \mbox{\Hypertarget{class_edit_table_widget_a5a449ebf8662cd1b145dd1e5b0cd1d2e}\label{class_edit_table_widget_a5a449ebf8662cd1b145dd1e5b0cd1d2e}} 
 \index{EditTableWidget@{EditTableWidget}!````~EditTableWidget@{$\sim$EditTableWidget}}
 \index{````~EditTableWidget@{$\sim$EditTableWidget}!EditTableWidget@{EditTableWidget}}
 \doxysubsubsection{\texorpdfstring{$\sim$EditTableWidget()}{~EditTableWidget()}}
 {\footnotesize\ttfamily Edit\+Table\+Widget\+::$\sim$\+Edit\+Table\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Class destructor. 
 
 
 
@@ -62,11 +78,19 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{addRowClicked()}{addRowClicked()}}
 {\footnotesize\ttfamily void Edit\+Table\+Widget\+::add\+Row\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Function which adds row -\/ collects data from UI and calls table\textquotesingle{}s function responsible for adding / editing row. 
+
 \mbox{\Hypertarget{class_edit_table_widget_a38fbd9577399d8a8c2b6630b092ec65c}\label{class_edit_table_widget_a38fbd9577399d8a8c2b6630b092ec65c}} 
 \index{EditTableWidget@{EditTableWidget}!addRowToggled@{addRowToggled}}
 \index{addRowToggled@{addRowToggled}!EditTableWidget@{EditTableWidget}}
 \doxysubsubsection{\texorpdfstring{addRowToggled()}{addRowToggled()}}
 {\footnotesize\ttfamily void Edit\+Table\+Widget\+::add\+Row\+Toggled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function which is run when add row radio button is toogled. 
 
 \mbox{\Hypertarget{class_edit_table_widget_ac4ce57fd3c41b511b6944eef058c7425}\label{class_edit_table_widget_ac4ce57fd3c41b511b6944eef058c7425}} 
 \index{EditTableWidget@{EditTableWidget}!createGuiNewRow@{createGuiNewRow}}
@@ -74,11 +98,19 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{createGuiNewRow()}{createGuiNewRow()}}
 {\footnotesize\ttfamily void Edit\+Table\+Widget\+::create\+Gui\+New\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Helper function responsible for creating new row in G\+UI. 
+
 \mbox{\Hypertarget{class_edit_table_widget_a6d114bb48f2a084d9142a68b83705f22}\label{class_edit_table_widget_a6d114bb48f2a084d9142a68b83705f22}} 
 \index{EditTableWidget@{EditTableWidget}!createNewTableItem@{createNewTableItem}}
 \index{createNewTableItem@{createNewTableItem}!EditTableWidget@{EditTableWidget}}
 \doxysubsubsection{\texorpdfstring{createNewTableItem()}{createNewTableItem()}}
 {\footnotesize\ttfamily void Edit\+Table\+Widget\+::create\+New\+Table\+Item (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{Q\+String \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Helper function responsible for creating new table cell in G\+UI. 
 
 \mbox{\Hypertarget{class_edit_table_widget_ab591c66fbf325c760748806397ef90df}\label{class_edit_table_widget_ab591c66fbf325c760748806397ef90df}} 
 \index{EditTableWidget@{EditTableWidget}!deleteRowClicked@{deleteRowClicked}}
@@ -86,17 +118,29 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{deleteRowClicked()}{deleteRowClicked()}}
 {\footnotesize\ttfamily void Edit\+Table\+Widget\+::delete\+Row\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Function which deletes row -\/ collects data from UI and calls table\textquotesingle{}s function responsible for deleting row. 
+
 \mbox{\Hypertarget{class_edit_table_widget_a43aae6d3a23cc1465f18c9e1e68062b3}\label{class_edit_table_widget_a43aae6d3a23cc1465f18c9e1e68062b3}} 
 \index{EditTableWidget@{EditTableWidget}!deleteRowToggled@{deleteRowToggled}}
 \index{deleteRowToggled@{deleteRowToggled}!EditTableWidget@{EditTableWidget}}
 \doxysubsubsection{\texorpdfstring{deleteRowToggled()}{deleteRowToggled()}}
 {\footnotesize\ttfamily void Edit\+Table\+Widget\+::delete\+Row\+Toggled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Function which is run when delete row radio button is toogled. 
+
 \mbox{\Hypertarget{class_edit_table_widget_ac4b9195248dba8b03e4ad1ecedf5924e}\label{class_edit_table_widget_ac4b9195248dba8b03e4ad1ecedf5924e}} 
 \index{EditTableWidget@{EditTableWidget}!editTableCell@{editTableCell}}
 \index{editTableCell@{editTableCell}!EditTableWidget@{EditTableWidget}}
 \doxysubsubsection{\texorpdfstring{editTableCell()}{editTableCell()}}
 {\footnotesize\ttfamily void Edit\+Table\+Widget\+::edit\+Table\+Cell (\begin{DoxyParamCaption}\item[{int}]{row\+Id,  }\item[{int}]{column\+Id,  }\item[{\mbox{\hyperlink{_common_dictionary_8h_a1b0936415a643c88ce543099c10e0d7f}{var}} \&}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Helper function which calls concrete table\textquotesingle{}s function responsible for editing existing cell. 
 
 
 
@@ -107,11 +151,19 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{currentTable}{currentTable}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_table}{Table}}$>$ Edit\+Table\+Widget\+::current\+Table\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Pointer to current table class. 
+
 \mbox{\Hypertarget{class_edit_table_widget_a6138c8abe1c64c86f33e83fbbf6628f5}\label{class_edit_table_widget_a6138c8abe1c64c86f33e83fbbf6628f5}} 
 \index{EditTableWidget@{EditTableWidget}!ui@{ui}}
 \index{ui@{ui}!EditTableWidget@{EditTableWidget}}
 \doxysubsubsection{\texorpdfstring{ui}{ui}}
 {\footnotesize\ttfamily Ui\+::\+Edit\+Table\+Widget Edit\+Table\+Widget\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable that holds reference to user interface objects. 
 
 
 
